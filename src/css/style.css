@@ -1,0 +1,145 @@
+﻿@import url(fontiran.css); /* لینک فایلی که وظیفه بارگذاری فونت ها را برعهده دارد */
+body {
+  font-family: IRANSans !important;
+  font-weight: 300;
+  direction: rtl;
+  margin: 0;
+  font-display: block;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+p,
+textarea {
+  font-family: IRANSans !important;
+}
+
+#right-logo {
+  word-spacing: -2px;
+}
+
+svg.my-icon {
+  transition: all 0.3s ease;
+}
+
+
+.top-menu li:hover svg.my-icon {
+  transform: rotate(180deg);
+  fill: rgb(52, 211, 153);
+}
+
+.sub-menu-about-us,
+.sub-menu-news,
+.sub-menu-csr-menu,
+.sub-menu-tenders,
+.sub-menu-media {
+  transform: translateY(0px);
+  opacity: 0;
+  transition: all 0.5s ease;
+  visibility: hidden;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 25px;
+  z-index: -1;
+}
+
+.submenu-user {
+  transform: translateY(0px);
+  opacity: 0;
+  transition: all 0.5s ease;
+  visibility: hidden;
+  /* position: absolute;
+    width: 100%; */
+}
+
+.submenu-user.activate {
+  transform: translateY(5px);
+  opacity: 1;
+  visibility: visible;
+}
+
+.sub-menu-about-us.activate,
+.sub-menu-news.activate,
+.sub-menu-csr-menu.activate,
+.sub-menu-tenders.activate,
+.sub-menu-media.activate {
+  transform: translateY(5px);
+  opacity: 1;
+  visibility: visible;
+}
+
+.drop-down-mobile {
+  transform: translateY(-40px);
+  opacity: 0;
+  transition: all 0.5s ease;
+  visibility: hidden;
+  width: 100%;
+  left: 0;
+  top: 25px;
+  display: none;
+  /* height: 0; */
+}
+
+.drop-down-mobile.activate {
+  transform: translateY(-30px);
+  opacity: 1;
+  display: block;
+  /* height: auto; */
+  visibility: visible;
+}
+
+.curve-bg {
+  background: url(../images/curve-bg.svg) top center;
+  min-height: 650px;
+  background-repeat: no-repeat;
+}
+.reverse-curve-bg {
+  background: none;
+  min-height: auto;
+}
+.curve-shape {
+  border-radius: 38% 62% 70% 30% / 50% 42% 58% 50%;
+  background: rgb(248, 251, 255);
+  background: linear-gradient(
+    270deg,
+    rgba(248, 251, 255, 1) 0%,
+    rgba(231, 242, 255, 1) 100%
+  );
+  width: 100%;
+}
+header {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+header::before {
+  background-color: #985be3;
+  position: absolute;
+  right: -220px;
+  top: 60px;
+  width: 300px;
+  height: 300px;
+  filter: blur(80px);
+  opacity: 100%;
+  border-radius: 100%;
+  content: "";
+  z-index: 0;
+}
+header::after {
+  background-color: #9fdef9;
+  position: absolute;
+  bottom: 20px;
+  left: -180px;
+  width: 300px;
+  height: 300px;
+  filter: blur(80px);
+  opacity: 100%;
+  border-radius: 100%;
+  content: "";
+  z-index: 0;
+}
