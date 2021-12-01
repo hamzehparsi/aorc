@@ -141,6 +141,9 @@ ScrollReveal().reveal('.tender-item', { delay: 500 });
 ScrollReveal().reveal('.tender-voc', { delay: 700 });
 ScrollReveal().reveal('.tender-download', { delay: 800 });
 
+
+ScrollReveal().reveal('.majale', { delay: 700 });
+ScrollReveal().reveal('.elmi', { delay: 900 });
 // window.onscroll = () { hiddenArrow() }
 window.onscroll = function() {hiddenArrow()};
 

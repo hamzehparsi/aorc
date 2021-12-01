@@ -948,11 +948,13 @@
         <div class="w-full order-2 md:w-1/2 lg:w-2/3 md:order-1 items-start pt-3 mt-12">
             <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-5 items-center">
                 <!-- majale -->
-                <div class="bg-white shadow-myShadowBox rounded-xl p-4">
-                    <div class="bg-gradient-to-r from-aorc-bnf to-aorc-darkblue -mt-28 mx-auto rounded-xl mb-2 w-full h-48 shadow-xl"></div>
+                <div class="bg-white shadow-myShadowBox rounded-xl p-4 majale">
+                    <div class="bg-gradient-to-r from-aorc-bnf to-aorc-darkblue -mt-28 mx-auto rounded-xl mb-2 w-full shadow-xl overflow-hidden">
+                        <img class="object-contain h-full" src="./src/images/ad.jpg" alt="">
+                    </div>
                     <div class="date flex items-center space-x-1 space-x-reverse px-2">
                         <svg class="fill-current text-gray-400 text-opacity-70 w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M20 3H4c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V5c0-1.103-.897-2-2-2zM4 19V5h7v14H4zm9 0V5h7l.001 14H13z"></path><path d="M15 7h3v2h-3zm0 4h3v2h-3z"></path></svg>
-                        <h4 class="text-xs text-gray-400 tracking-tight leading-5">شماره 23</h4>
+                        <h4 class="text-xs text-gray-400 tracking-tight leading-5">شماره بیست و چهارم</h4>
                     </div>
                     <div class="px-2">
                         <a href="#" class="mb-3 pt-12 tracking-tighter text-aorc-blue font-bold text-sm leading-7">"نهضت ادامه دارد" منتشر شد</a>
@@ -960,15 +962,15 @@
                 </div>
                 <!-- end of majale -->
                 <!-- neveshtare elmi -->
-                <div class="bg-white shadow-myShadowBox rounded-xl p-6 mt-24 md:mt-0 relative">
+                <div class="bg-white shadow-myShadowBox rounded-xl p-5 mt-8 md:mt-0 relative elmi">
                     <div class="flex space-x-4 space-x-reverse items-center">
                         <div class="relative">
                             <img class="w-16 h-16 object-cover rounded-xl" src="./src/images/personal.jpg" alt="">
-                            <div class="bg-aorc-blue text-xs p-1 absolute -left-2 rounded-md rounded-bl-none text-white -bottom-1 pl-1.5">'23</div>
+                            <div class="bg-aorc-blue text-xs p-1 absolute -left-2 rounded-xl rounded-bl-none text-white -bottom-2 pl-1 border-aorc-bg border-2">'23</div>
                         </div>
                         <div class="author space-y-2">
                             <h2 class="text-xs text-aorc-textabi pt-2">علی اکبری</h2>
-                            <h4 class="text-xxs text-gray-400 tracking-tight leading-5 transition-all duration-500">12 اردیبهشت 1400</h4>
+                            <h4 class="text-xxs text-gray-300 tracking-tight leading-5 transition-all duration-500">دقیقه برای مطالعه</h4>
                         </div>
                     </div>
                     <div class="hashtag flex divide-x-2 divide-x-reverse mt-3 mb-1">
@@ -977,12 +979,24 @@
                     </div>
                     <a href="#" class="pt-6 tracking-tighter text-aorc-blue font-bold text-sm leading-7">چگونگی عملکرد واحدهای اسیدی در بازه های انتقالی و مداری و چرخشی در واحد ها</a>
                     <h4 class="selection:bg-yellow-300 my-2 text-xs text-aorc-textabi tracking-tight leading-6">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. </h4>
-                    <div class="bg-aorc-blue w-80 md:w-72 lg:w-64 md:mr-2.5 lg:mr-1 h-2 rounded-full mx-auto absolute -bottom-1"></div>
+                    <!-- <div class="bg-aorc-blue w-80 md:w-72 lg:w-64 md:mr-2.5 lg:mr-1 h-2 rounded-full mx-auto absolute -bottom-1"></div> -->
+                    <div class="flex justify-between border-t border-gray-100 pt-2">
+                        <div class="date flex items-center space-x-1 space-x-reverse">
+                            <svg class="fill-current text-gray-300 transition-all duration-500 w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"></path><path d="M13 7h-2v5.414l3.293 3.293 1.414-1.414L13 11.586z"></path></svg>
+                            <h4 class="text-xs text-gray-400 tracking-tight leading-5 transition-all duration-500">12 اردیبهشت 1400</h4>
+                        </div>
+                        <div class="read-more flex justify-center items-center space-x-2 space-x-reverse">
+                            <a href="#" class="text-xs font-bold text-aorc-abi tracking-tight leading-5 transition-all duration-500">ادامه مطلب</a>
+                            <a class="p-1 mx-auto flex justify-center items-center bg-gradient-to-r from-aorc-blue to-aorc-bnf transition-all duration-300  w-6 h-6 rounded-full" href="#">
+                                <svg class="text-white fill-current" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12.707 17.293 8.414 13H18v-2H8.414l4.293-4.293-1.414-1.414L4.586 12l6.707 6.707z"></path></svg>
+                            </a>
+                        </div>
+                    </div>
                 </div>
                 <!-- end of elmi -->                
             </div>
         </div>
-        <div class="w-full order-1 md:order-2 md:w-1/2 lg:w-1/3 -mt-24">
+        <div class="w-full order-1 md:order-2 md:w-1/2 lg:w-1/3 pb-12">
             <!-- entesharat title block -->
             <div class="titleBlock">
                 <div class="titleBlockGroup relative z-20 flex space-x-4 space-x-reverse items-center pt-16">
