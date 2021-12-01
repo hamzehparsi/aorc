@@ -1,1731 +1,1118 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8"/>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Vite App</title>
-  </head>
-  <body class="bg-aorc-bg">
-    <!-- header start -->
-    <header class="h-screen relative">
-      <!-- top menu -->
-      <div class="px-4 pt-8" id="top-menu">
-        <div
-          class="
-            flex
-            items-center
-            relative
-            z-10
-            justify-between
-            max-w-md
-            bg-white
-            rounded-full
-            shadow-myShadowBox
-            sm:max-w-screen-md
-            lg:max-w-screen-lg
-            mx-auto
-            h-16
-            rounded-full
-            p-8
-            mx-4
-          "
-        >
-          <!-- logo -->
-          <div
-            class="flex items-center space-x-4 space-x-reverse"
-            id="right-logo"
-          >
-            <div class="logo">
-              <img
-                alt="شرکت پالایش نفت آبادان"
-                class="w-11 h-auto"
-                src="./src/images/logo.svg"
-              />
+    <script src="/src/js/scrollreveal.min.js"></script>
+</head>
+
+<body class="bg-aorc-bg selection:text-aorc-darkblue selection:bg-aorc-lightabi">
+<!-- header start -->
+<header class="h-screen">
+    <!-- top menu -->
+    <div class="px-4 pt-8" id="top-menu">
+        <div class="flex items-center relative z-10 justify-between max-w-md bg-white rounded-full shadow-myShadowBox sm:max-w-screen-md lg:max-w-screen-lg mx-auto h-16 p-8">
+            <!-- logo -->
+            <div class="flex items-center space-x-4 space-x-reverse" id="right-logo">
+                <div class="logo">
+                    <img alt="شرکت پالایش نفت آبادان" class="w-11 h-auto" src="./src/images/logo.svg"/>
+                </div>
+                <div class="des text-justify">
+                    <h1 class="text-aorc-blue font-extrabold text-sm tracking-tight">
+                        شـرکت پالایش نفت آبـادان
+                    </h1>
+                    <h2 class="text-xxs tracking-tight text-gray-400">
+                        یک صد سـال افتـخار در صنعت نفت ایـران
+                    </h2>
+                </div>
             </div>
-            <div class="des text-justify">
-              <h1 class="text-aorc-blue font-extrabold text-sm tracking-tight">
-                شـرکت پالایش نفت آبـادان
-              </h1>
-              <h2 class="text-xxs tracking-tight text-gray-400">
-                یک صد سـال افتـخار در صنعت نفت ایـران
-              </h2>
+            <!-- menu -->
+            <div class="top-menu hidden lg:block">
+                <ul class="flex items-center space-x-6 space-x-reverse">
+                    <li class="flex items-center space-x-1 space-x-reverse" id="homeMenu">
+                        <a class="text-xs font-semibold text-aorc-blue justify-items-center" href="#">خانه</a>
+                    </li>
+                    <li class="group menu-item has-children flex items-center space-x-1 space-x-reverse" id="about-us">
+                        <a class="text-xs font-normal justify-items-center text-aorc-textabi group-hover:text-aorc-blue group-hover:font-bold"
+                           href="#">درباره ما</a>
+                        <svg class="my-icon h-4 w-4 fill-current text-gray-300" fill="currentColor" viewBox="0 0 20 20"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <path clip-rule="evenodd"
+                                  d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                  fill-rule="evenodd"/>
+                        </svg>
+                        <!-- about us menu -->
+                        <div class="sub-menu-about-us">
+                            <div class="max-w-xs bg-white bg-opacity-100 rounded-2xl z-0 relative shadow-myShadowBox sm:max-w-screen-sm md:max-w-screen-lg lg:max-w-screen-lg xl:max-w-screen-xl mx-auto">
+                                <div class="mt-10 flex items-center p-9 space-x-8 space-x-reverse">
+                                    <div class="w-full">
+                                        <div class="flex items-center">
+                                            <div class="w-4/5 flex items-start">
+                                                <div class="w-1/3">
+                                                    <div class="icons-menu relative mb-2">
+                                                        <img alt="" class="w-14 h-auto z-10 relative mr-1 pb-1"
+                                                             src="./src/images/in.svg"/>
+                                                        <div class="bg-aorc-lightblue bg-opacity-10 z-0 w-10 h-10 rounded-full rounded-br-none absolute bottom-0"></div>
+                                                    </div>
+                                                    <a class="text-aorc-blue text-sm -mb-1 tracking-tighter font-bold hover:text-green-400 transition-all ease-linear"
+                                                       href="#">معـرفی واحدها</a>
+                                                    <h4 class="text-aorc-textabi leading-5 text-xxs my-2">در این بخش به معرفی واحدهای مختلف شرکت پرداخته ایم</h4>
+                                                </div>
+                                                <div class="w-1/3">
+                                                    <div class="icons-menu relative mb-2 mt-1.5">
+                                                        <img alt="" class="w-16 h-auto z-10 relative mr-1 pb-1"
+                                                             src="./src/images/group.svg"/>
+                                                        <div class="bg-aorc-lightblue bg-opacity-10 z-0 w-10 h-10 rounded-full rounded-br-none absolute bottom-0"></div>
+                                                    </div>
+                                                    <a class="text-aorc-blue text-sm tracking-tighter font-bold hover:text-green-400 transition-all ease-linear"
+                                                       href="#">مدیـران و روسـا</a>
+                                                    <h4 class="text-aorc-textabi leading-5 text-xxs my-2">
+                                                        در این صفحه به معرفی مدیران و روسای شرکت پرداخته ایم
+                                                    </h4>
+                                                </div>
+                                                <div class="w-1/3">
+                                                    <div class="icons-menu relative mb-2 mt-1">
+                                                        <img alt="" class="w-10 h-auto z-10 relative mr-1 pb-1"
+                                                             src="./src/images/new-biofuel.svg"/>
+                                                        <div class="bg-aorc-lightblue bg-opacity-10 z-0 w-10 h-10 rounded-full rounded-br-none absolute bottom-0"></div>
+                                                    </div>
+                                                    <a class="text-aorc-blue text-sm pb-1 tracking-tighter font-bold hover:text-green-400 transition-all ease-linear"
+                                                       href="#">معـرفی محصـولات</a>
+                                                    <h4 class="text-aorc-textabi text-xxs leading-5 my-2">
+                                                        در این بخش ما به معرفی محصولات مختلف شرکت پرداخته ایم
+                                                    </h4>
+                                                </div>
+                                            </div>
+                                            <div class="w-1/5 px-6">
+                                                <ul class="list-disc space-y-3">
+                                                    <li class="text-xs text-gray-800 font-normal hover:text-green-400 transition-all ease-linear">
+                                                        <a href="#">معرفی شهدا</a>
+                                                    </li>
+                                                    <li class="text-xs text-gray-800 font-normal hover:text-green-400 transition-all ease-linear">
+                                                        <a href="#">دستاوردها و افتخارات</a>
+                                                    </li>
+                                                    <li class="text-xs text-gray-800 font-normal hover:text-green-400 transition-all ease-linear">
+                                                        <a href="#">تاریحچه شرکت</a>
+                                                    </li>
+                                                    <li class="text-xs text-gray-800 font-normal hover:text-green-400 transition-all ease-linear">
+                                                        <a href="#">قوانین و مقررات</a>
+                                                    </li>
+                                                    <li class="text-xs text-gray-800 font-normal hover:text-green-400 transition-all ease-linear">
+                                                        <a href="#">چشم انداز</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end about us menu -->
+                    </li>
+                    <li class="group menu-item has-children flex items-center space-x-1 space-x-reverse" id="news-menu">
+                        <a class="text-xs font-normal justify-items-center text-aorc-textabi group-hover:text-aorc-blue group-hover:font-bold"
+                           href="#">اخبـار و رویدادها</a>
+                        <svg class="my-icon h-4 w-4 fill-current text-gray-300" fill="currentColor" viewBox="0 0 20 20"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <path clip-rule="evenodd"
+                                  d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                  fill-rule="evenodd"/>
+                        </svg>
+                        <!-- news menu -->
+                        <div class="sub-menu-news">
+                            <div class="max-w-xs bg-white bg-opacity-100 rounded-2xl z-0 relative shadow-myShadowBox sm:max-w-screen-sm md:max-w-screen-lg lg:max-w-screen-lg xl:max-w-screen-xl mx-auto">
+                                <div class="mt-10 flex items-center p-9 py-10 space-x-reverse space-x-2">
+                                    <div class="w-4/5">
+                                        <div class="flex items-center space-x-reverse space-x-4 divide-x divide-x-reverse divide-opacity-40 divide-blue-200">
+                                            <div class="w-2/4">
+                                                <div class="flex items-center space-x-reverse space-x-2">
+                                                    <div class="w-2/4">
+                                                        <img alt="" class="w-full h-24 lg:h-28 object-cover rounded-md"
+                                                             src="./src/images/personal.jpg"/>
+                                                    </div>
+                                                    <div class="w-2/4 space-y-1 px-2">
+                                                        <h4 class="text-gray-400 text-xxs">
+                                                            آخرین خبر
+                                                        </h4>
+                                                        <a class="text-aorc-blue text-sm pb-1 tracking-tighter font-bold hover:text-green-400 transition-all ease-linear"
+                                                           href="#">صحت و سلامت حس دنيوي را بايد از طبيب جسم جويا شد</a>
+                                                        <h4 class="text-aorc-textabi text-xxs leading-5">
+                                                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و
+                                                            با استفاده از طراحان گرافیک است.
+                                                        </h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="w-2/4 px-4">
+                                                <div class="flex items-center space-x-reverse space-x-2">
+                                                    <div class="w-1/4">
+                                                        <img alt="" class="w-full h-24 lg:h-28 object-cover rounded-md"
+                                                             src="./src/images/personal.jpg"/>
+                                                    </div>
+                                                    <div class="w-3/4 space-y-1 px-2">
+                                                        <h4 class="text-gray-400 text-xxs">
+                                                            آخرین رویداد
+                                                        </h4>
+                                                        <a class="text-aorc-blue text-sm pb-1 tracking-tighter font-bold hover:text-aorc-blue transition-all ease-linear"
+                                                           href="#">جشنواره روزه اولی ها</a>
+                                                        <h4 class="text-aorc-textabi text-xxs leading-5">
+                                                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و
+                                                            با استفاده از طراحان گرافیک است.
+                                                        </h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="w-1/5 pr-8">
+                                        <ul class="list-disc space-y-3">
+                                            <li class="text-xs text-gray-800 font-normal hover:text-green-400 transition-all ease-linear">
+                                                <a href="#">آخرین هشتگ ها</a>
+                                            </li>
+                                            <li class="text-xs text-gray-800 font-normal hover:text-green-400 transition-all ease-linear">
+                                                <a href="#">پربازدیدترین اخبـار</a>
+                                            </li>
+                                            <li class="text-xs text-gray-800 font-normal hover:text-green-400 transition-all ease-linear">
+                                                <a href="#">آخرین رویداد ها</a>
+                                            </li>
+                                            <li class="text-xs text-gray-800 font-normal hover:text-green-400 transition-all ease-linear">
+                                                <a href="#">آرشیو اخبـار</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end about us menu -->
+                    </li>
+                    <li class="group menu-item has-children flex items-center space-x-1 space-x-reverse" id="tenders">
+                        <a class="text-xs font-normal justify-items-center text-aorc-textabi group-hover:text-aorc-blue group-hover:font-bold"
+                           href="#">فـراخوان ها</a>
+                        <svg class="my-icon h-4 w-4 fill-current text-gray-300" fill="currentColor" viewBox="0 0 20 20"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <path clip-rule="evenodd"
+                                  d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                  fill-rule="evenodd"/>
+                        </svg>
+                        <!-- tender menu -->
+                        <div class="sub-menu-tenders">
+                            <div class="max-w-xs bg-white bg-opacity-100 rounded-2xl z-0 relative shadow-myShadowBox sm:max-w-screen-sm md:max-w-screen-lg lg:max-w-screen-lg xl:max-w-screen-xl mx-auto">
+                                <div class="mt-10 flex items-center p-9">
+                                    <div class="w-full mt-3">
+                                        <div class="flex items-center">
+                                            <div class="w-4/5 flex items-start">
+                                                <div class="w-1/2 px-6 flex items-center space-x-4 space-x-reverse">
+                                                    <div class="icons-menu relative mb-4">
+                                                        <img alt="" class="w-20 h-auto z-10 relative mr-1 pb-1"
+                                                             src="./src/images/monaghese.svg"/>
+                                                        <div class="bg-aorc-lightblue bg-opacity-10 z-0 w-10 h-10 rounded-full rounded-br-none absolute bottom-0"></div>
+                                                    </div>
+                                                    <div class="-mt-3.5">
+                                                        <a class="text-aorc-blue text-sm pb-1 tracking-tighter font-bold hover:text-green-400 transition-all ease-linear"
+                                                           href="">مناقصه ها</a>
+                                                        <h4 class="text-aorc-textabi leading-5 text-xxs font-normal">
+                                                            در این بخش شما می توانید از آخرین مناقصه های منتشر شده در وب
+                                                            سایت بازدید نمایید
+                                                        </h4>
+                                                    </div>
+                                                </div>
+                                                <div class="w-1/2 px-6 flex items-center space-x-4 space-x-reverse">
+                                                    <div class="icons-menu relative mb-4">
+                                                        <img alt="" class="w-20 h-auto z-10 relative mr-1 pb-1"
+                                                             src="./src/images/mozayedeh.svg"/>
+                                                        <div class="bg-aorc-lightblue bg-opacity-10 z-0 w-10 h-10 rounded-full rounded-br-none absolute bottom-0"></div>
+                                                    </div>
+                                                    <div class="-mt-3.5">
+                                                        <a class="text-aorc-blue text-sm pb-1 tracking-tighter font-bold hover:text-green-400 transition-all ease-linear"
+                                                           href="">مزایده ها</a>
+                                                        <h4 class="text-aorc-textabi leading-5 text-xxs font-normal">
+                                                            آخرین مزایده های انتشار یافته در وب سایت را می توانید در بخش
+                                                            ملاحظه نمایید
+                                                        </h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="w-1/5 -mt-5 px-6 flex items-center space-x-4 space-x-reverse">
+                                                <ul class="list-disc space-y-3">
+                                                    <li class="text-xs text-gray-800 font-normal hover:text-green-400 transition-all ease-linear">
+                                                        <a href="#">آخرین هشتگ ها</a>
+                                                    </li>
+                                                    <li class="text-xs text-gray-800 font-normal hover:text-green-400 transition-all ease-linear">
+                                                        <a href="#">پربازدیدترین فراخوان ها</a>
+                                                    </li>
+                                                    <li class="text-xs text-gray-800 font-normal hover:text-green-400 transition-all ease-linear">
+                                                        <a href="#">آرشیو کامل فراخوان ها</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end about us menu -->
+                    </li>
+                    <li class="group menu-item has-children flex items-center space-x-1 space-x-reverse" id="media">
+                        <a class="text-xs font-normal justify-items-center text-aorc-textabi group-hover:text-aorc-blue group-hover:font-bold"
+                           href="#">رسـانه</a>
+                        <svg class="my-icon h-4 w-4 fill-current text-gray-300" fill="currentColor" viewBox="0 0 20 20"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <path clip-rule="evenodd"
+                                  d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                  fill-rule="evenodd"/>
+                        </svg>
+                        <!-- news menu -->
+                        <div class="sub-menu-media">
+                            <div class="max-w-xs bg-white bg-opacity-100 rounded-2xl z-0 relative shadow-myShadowBox sm:max-w-screen-sm md:max-w-screen-lg lg:max-w-screen-lg xl:max-w-screen-xl mx-auto">
+                                <div class="mt-10 flex items-center p-9">
+                                    <div class="w-4/5">
+                                        <div class="flex items-start">
+                                            <div class="w-1/3 px-6">
+                                                <div class="icons-menu relative mb-2.5">
+                                                    <img alt="" class="w-12 h-auto z-10 relative mr-1 pb-1"
+                                                         src="./src/images/video.svg"/>
+                                                    <div class="bg-aorc-lightblue bg-opacity-10 z-0 w-10 h-10 rounded-full rounded-br-none absolute bottom-0"></div>
+                                                </div>
+                                                <a class="text-aorc-blue text-sm pb-1 tracking-tighter font-bold hover:text-green-400 transition-all ease-linear"
+                                                   href=""> ویـدیو ها</a>
+                                                <h4 class="text-aorc-textabi text-xxs leading-5">در این بخش شما می توانید از آخرین و جدیدترین ویدیوهای منتشر شده دروب سایت دیدن نمایید</h4>
+                                            </div>
+                                            <div class="w-1/3 px-6">
+                                                <div class="icons-menu relative mb-4">
+                                                    <img alt="" class="w-12 h-auto z-10 relative mr-1"
+                                                         src="./src/images/photo.svg"/>
+                                                    <div class="bg-aorc-lightblue bg-opacity-10 z-0 w-10 h-10 rounded-full rounded-br-none absolute bottom-0"></div>
+                                                </div>
+                                                <a class="text-aorc-blue text-sm pb-1 tracking-tighter font-bold hover:text-green-400 transition-all ease-linear"
+                                                   href="">گـزارش های تصویـری</a>
+                                                <h4 class="text-aorc-textabi leading-5 text-xxs">
+                                                    در این بخش آخرین و جدیدترین گزارش های تصویری از رویـدادهـای مختلف
+                                                    شرکت ارایه گردیده است
+                                                </h4>
+                                            </div>
+                                            <div class="w-1/3 px-6">
+                                                <div class="icons-menu relative mb-2">
+                                                    <img alt="" class="w-12 h-auto z-10 relative mr-1 pb-1"
+                                                         src="./src/images/nashrieh.svg"/>
+                                                    <div class="bg-aorc-lightblue bg-opacity-10 z-0 w-10 h-10 rounded-full rounded-br-none absolute bottom-0"></div>
+                                                </div>
+                                                <a class="text-aorc-blue text-sm pb-1 tracking-tighter font-bold hover:text-green-400 transition-all ease-linear"
+                                                   href="">انتشـارات</a>
+                                                <h4 class="text-aorc-textabi leading-5 text-xxs">
+                                                    در این بخش شما می توانید به نشریات ، کاتالوگ ها و تولیدات محتوایی
+                                                    شرکت دسترسی داشته باشید
+                                                </h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="w-1/5 pr-8">
+                                        <ul class="list-disc space-y-3">
+                                            <li class="text-xs text-gray-800 font-normal hover:text-green-400 transition-all ease-linear">
+                                                <a href="#">بروشور ها</a>
+                                            </li>
+                                            <li class="text-xs text-gray-800 font-normal hover:text-green-400 transition-all ease-linear">
+                                                <a href="#">پادکست ها</a>
+                                            </li>
+                                            <li class="text-xs text-gray-800 font-normal hover:text-green-400 transition-all ease-linear">
+                                                <a href="#">نوشتار علمی</a>
+                                            </li>
+                                            <li class="text-xs text-gray-800 font-normal hover:text-green-400 transition-all ease-linear">
+                                                <a href="#">نشریات</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end about us menu -->
+                    </li>
+                    <!-- start csr -->
+                    <li class="group menu-item has-children flex items-center space-x-1 space-x-reverse" id="csr-menu">
+                        <a class="text-xs font-normal justify-items-center text-aorc-textabi group-hover:text-aorc-blue group-hover:font-bold"
+                           href="#">مسئولیت های اجتماعی</a>
+                        <svg class="my-icon h-4 w-4 fill-current text-gray-300" fill="currentColor" viewBox="0 0 20 20"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <path clip-rule="evenodd"
+                                  d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                  fill-rule="evenodd"/>
+                        </svg>
+                        <!-- CSR menu -->
+                        <div class="sub-menu-csr-menu">
+                            <div class="max-w-xs bg-white bg-opacity-100 rounded-2xl z-0 relative shadow-myShadowBox sm:max-w-screen-sm md:max-w-screen-lg lg:max-w-screen-lg xl:max-w-screen-xl mx-auto">
+                                <div class="mt-10 flex items-center p-9">
+                                    <div class="w-full">
+                                        <div class="flex items-center divide-x-2 divide-indigo-50 divide-x-reverse">
+                                            <div class="w-2/4 px-6 flex items-center space-x-4 space-x-reverse">
+                                                <div class="flex items-center space-x-reverse space-x-2">
+                                                    <div class="w-2/4">
+                                                        <img alt="" class="w-full h-24 lg:h-28 object-cover rounded-md"
+                                                             src="./src/images/personal.jpg"/>
+                                                    </div>
+                                                    <div class="w-2/4 space-y-1 px-2">
+                                                        <h4 class="text-gray-400 text-xxs">
+                                                            آخرین خبر
+                                                        </h4>
+                                                        <a class="text-aorc-blue text-sm pb-1 tracking-tighter font-bold hover:text-green-400 transition-all ease-linear"
+                                                           href="#">صحت و سلامت حس دنيوي را بايد از طبيب جسم جويا شد</a>
+                                                        <h4 class="text-aorc-textabi text-xxs leading-5">
+                                                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و
+                                                            با استفاده از طراحان گرافیک است.
+                                                        </h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="w-2/4 px-6 flex items-center space-x-8 space-x-reverse divide-x-2 divide-indigo-50 divide-x-reverse">
+                                                <ul class="list-disc space-y-3 pr-4">
+                                                    <li class="text-xs text-gray-800 font-normal hover:text-aorc-sabz transition-all ease-in-out duration-200">
+                                                        <a href="#">کارکنان و مشتریان</a>
+                                                    </li>
+                                                    <li class="text-xs text-gray-800 font-normal hover:text-aorc-sabz transition-all ease-in-out duration-200">
+                                                        <a href="#">روابط عمومی و ستاد اقامه نماز</a>
+                                                    </li>
+                                                    <li class="text-xs text-gray-800 font-normal hover:text-aorc-sabz transition-all ease-in-out duration-200">
+                                                        <a href="#">انرژی</a>
+                                                    </li>
+                                                </ul>
+                                                <ul class="list-disc space-y-3 pr-12">
+                                                    <li class="text-xs text-gray-800 font-normal hover:text-aorc-sabz transition-all ease-in-out duration-200">
+                                                        <a href="#">حقوقی و پیمانها</a>
+                                                    </li>
+                                                    <li class="text-xs text-gray-800 font-normal hover:text-aorc-sabz transition-all ease-in-out duration-200">
+                                                        <a href="#">مالی</a>
+                                                    </li>
+                                                    <li class="text-xs text-gray-800 font-normal hover:text-aorc-sabz transition-all ease-in-out duration-200">
+                                                        <a href="#">HSE</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end about us menu -->
+                    </li>
+                    <!-- end csr -->
+                </ul>
             </div>
-          </div>
-          <!-- menu -->
-          <div class="top-menu hidden lg:block">
-            <ul class="flex items-center space-x-6 space-x-reverse">
-              <li
-                class="flex items-center space-x-1 space-x-reverse"
-                id="homeMenu"
-              >
-                <a
-                  class="
-                    text-xs
-                    font-semibold
-                    text-aorc-blue
-                    justify-items-center
-                  "
-                  href="#"
-                  >خانه</a
-                >
-              </li>
-              <li
-                class="
-                group
-                  menu-item
-                  has-children
-                  flex
-                  items-center
-                  space-x-1 space-x-reverse
-                "
-                id="about-us"
-              >
-                <a class="text-xs font-normal justify-items-center text-aorc-banafsh group-hover:text-aorc-blue group-hover:font-bold" href="#"
-                  >درباره ما</a
-                >
-                <svg
-                  class="my-icon h-4 w-4 fill-current text-gray-300"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    clip-rule="evenodd"
-                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                    fill-rule="evenodd"
-                  />
-                </svg>
-                <!-- about us menu -->
-                <div class="sub-menu-about-us">
-                  <div
-                    class="
-                      max-w-xs
-                      bg-white bg-opacity-100
-                      rounded-3xl
-                      z-0
-                      relative
-                      shadow-myShadowBox
-                      sm:max-w-screen-sm
-                      md:max-w-screen-lg
-                      lg:max-w-screen-lg
-                      xl:max-w-screen-xl
-                      mx-auto
-                    "
-                  >
-                    <div
-                      class="
-                        mt-10
-                        flex
-                        items-center
-                        p-9
-                        space-x-8 space-x-reverse
-                      "
-                    >
-                      <div class="w-full">
-                        <div class="flex items-center">
-                          <div class="w-1/4 px-6">
-                            <div class="icons-menu relative mb-2">
-                              <img
-                                alt=""
-                                class="w-14 h-auto z-10 relative mr-1 pb-1"
-                                src="./src/images/in.svg"
-                              />
-                              <div
-                                class="
-                                  bg-aorc-lightblue bg-opacity-10
-                                  z-0
-                                  w-10
-                                  h-10
-                                  rounded-full rounded-br-none
-                                  absolute
-                                  bottom-0
-                                "
-                              ></div>
+            <!-- user-menu -->
+            <div class="user-menu hidden lg:block">
+                <div class="flex items-center space-x-4 space-x-reverse">
+                    <div class="user-profile mr-1" id="user-image">
+                        <img alt="" class="user-image w-7 h-7 relative object-cover rounded-full"
+                             src="./src/images/personal.jpg"/>
+                        <div class="submenu-user absolute left-0 mt-6">
+                            <div class="flex flex-col -mt-1">
+                                <div class="bg-green-400 relative z-0 mx-auto w-4 h-4 transform rotate-45"></div>
+                                <ul class="divide-y border-t-4 border-green-400 relative z-10 -mt-3 divide-blue-100 divide-opacity-50 p-6 w-56 bg-white rounded-lg shadow-myShadowBox">
+                                    <li class="text-xs text-gray-600 font-normal hover:text-green-400 py-2 transition-all ease-linear">
+                                        <a href="#">پروفایل</a>
+                                    </li>
+                                    <li class="text-xs text-gray-600 font-normal hover:text-green-400 py-2 transition-all ease-linear">
+                                        <a href="#">ویراش مشخصات</a>
+                                    </li>
+                                    <li class="text-xs text-gray-600 font-normal hover:text-green-400 py-2 transition-all ease-linear">
+                                        <a href="#">خروج از حساب کاربری</a>
+                                    </li>
+                                </ul>
                             </div>
-                            <a
-                              class="
-                                text-aorc-blue text-sm
-                                -mb-1
-                                tracking-tighter
-                                font-bold
-                                hover:text-green-400
-                                transition-all
-                                ease-linear
-                              "
-                              href="#"
-                              >معـرفی واحدها</a
-                            >
-                            <h4 class="text-aorc-banafsh text-xxs my-2">
-                              در این بخش به معرفی واحدهای مختلف شرکت پرداخته ایم
-                            </h4>
-                          </div>
-                          <div class="w-1/4 px-6">
-                            <div class="icons-menu relative mb-2">
-                              <img
-                                alt=""
-                                class="w-16 h-auto z-10 relative mr-1 pb-1"
-                                src="./src/images/group.svg"
-                              />
-                              <div
-                                class="
-                                  bg-aorc-lightblue bg-opacity-10
-                                  z-0
-                                  w-10
-                                  h-10
-                                  rounded-full rounded-br-none
-                                  absolute
-                                  bottom-0
-                                "
-                              ></div>
-                            </div>
-                            <a
-                              class="
-                                text-aorc-blue text-sm
-                                tracking-tighter
-                                font-bold
-                                hover:text-green-400
-                                transition-all
-                                ease-linear
-                              "
-                              href="#"
-                              >مدیـران و روسـا</a
-                            >
-                            <h4 class="text-aorc-banafsh text-xxs my-2">
-                              شما می توانید در این صفحه با مدیران و روسای شرکت
-                              آشنا شوید
-                            </h4>
-                          </div>
-                          <div class="w-1/4 px-6">
-                            <div class="icons-menu relative mb-2">
-                              <img
-                                alt=""
-                                class="w-10 h-auto z-10 relative mr-1 pb-1"
-                                src="./src/images/new-biofuel.svg"
-                              />
-                              <div
-                                class="
-                                  bg-aorc-lightblue bg-opacity-10
-                                  z-0
-                                  w-10
-                                  h-10
-                                  rounded-full rounded-br-none
-                                  absolute
-                                  bottom-0
-                                "
-                              ></div>
-                            </div>
-                            <a
-                              class="
-                                text-aorc-blue text-sm
-                                pb-1
-                                tracking-tighter
-                                font-bold
-                                hover:text-green-400
-                                transition-all
-                                ease-linear
-                              "
-                              href="#"
-                              >معـرفی محصـولات</a
-                            >
-                            <h4 class="text-aorc-banafsh text-xxs my-2">
-                              در این بخش ما به معرفی محصولات مختلف شرکت پرداخته
-                              ایم
-                            </h4>
-                          </div>
-                          <div class="w-1/4 px-6">
-                            <ul class="list-disc space-y-3">
-                              <li
-                                class="
-                                  text-xs text-gray-800
-                                  font-normal
-                                  hover:text-green-400
-                                  transition-all
-                                  ease-linear
-                                "
-                              >
-                                <a href="#">معرفی شهدا</a>
-                              </li>
-                              <li
-                                class="
-                                  text-xs text-gray-800
-                                  font-normal
-                                  hover:text-green-400
-                                  transition-all
-                                  ease-linear
-                                "
-                              >
-                                <a href="#">دستاوردها و افتخارات</a>
-                              </li>
-                              <li
-                                class="
-                                  text-xs text-gray-800
-                                  font-normal
-                                  hover:text-green-400
-                                  transition-all
-                                  ease-linear
-                                "
-                              >
-                                <a href="#">تاریحچه شرکت</a>
-                              </li>
-                              <li
-                                class="
-                                  text-xs text-gray-800
-                                  font-normal
-                                  hover:text-green-400
-                                  transition-all
-                                  ease-linear
-                                "
-                              >
-                                <a href="#">قوانین و مقررات</a>
-                              </li>
-                            </ul>
-                          </div>
                         </div>
-                      </div>
                     </div>
-                  </div>
+                    <div class="search">
+                        <svg class="h-5 w-5 strock-current text-gray-300" fill="none" stroke="currentColor"
+                             viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" stroke-linecap="round"
+                                  stroke-linejoin="round" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <div class="languege text-xs flex-col justify-items-center -space-y-1">
+                        <h4 class="text-green-400 font-extrabold"><a href="">FA</a></h4>
+                        <h4 class="text-gray-200 font-normal"><a href="">EN</a></h4>
+                    </div>
                 </div>
-                <!-- end about us menu -->
-              </li>
-              <li
-                class="
-                group
-                  menu-item
-                  has-children
-                  flex
-                  items-center
-                  space-x-1 space-x-reverse
-                "
-                id="news"
-              >
-                <a class="text-xs font-normal justify-items-center text-aorc-banafsh group-hover:text-aorc-blue group-hover:font-bold" href="#"
-                  >اخبـار و رویدادها</a
-                >
-                <svg
-                  class="my-icon h-4 w-4 fill-current text-gray-300"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    clip-rule="evenodd"
-                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                    fill-rule="evenodd"
-                  />
+            </div>
+            <!-- end user-menu -->
+            <!-- mobile menu -->
+            <div class="cursor-pointer mobile-menu block lg:hidden" id="mobileMenuIcon">
+                <svg class="text-gray-400 cursor-pointer stroke-current h-5 w-5" fill="currentColor" viewBox="0 0 20 20"
+                     xmlns="http://www.w3.org/2000/svg">
+                    <path clip-rule="evenodd"
+                          d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h6a1 1 0 110 2H4a1 1 0 01-1-1z"
+                          fill-rule="evenodd"/>
                 </svg>
-                <!-- news menu -->
-                <div class="sub-menu-news">
-                  <div
-                    class="
-                      max-w-xs
-                      bg-white bg-opacity-100
-                      rounded-3xl
-                      z-0
-                      relative
-                      shadow-myShadowBox
-                      sm:max-w-screen-sm
-                      md:max-w-screen-lg
-                      lg:max-w-screen-lg
-                      xl:max-w-screen-xl
-                      mx-auto
-                    "
-                  >
-                    <div
-                      class="
-                        mt-10
-                        flex
-                        items-center
-                        p-9
-                        py-10
-                        space-x-8 space-x-reverse space-x-2
-                      "
-                    >
-                      <div class="w-3/4">
-                        <div
-                          class="
-                            flex
-                            items-center
-                            space-x-reverse space-x-4
-                            divide-x
-                            divide-x-reverse
-                            divide-opacity-40
-                            divide-blue-200
-                          "
-                        >
-                          <div class="w-2/4">
-                            <div
-                              class="
-                                flex
-                                items-center
-                                space-x-reverse space-x-2
-                              "
-                            >
-                              <div class="w-2/4">
-                                <img
-                                  alt=""
-                                  class="
-                                    w-full
-                                    h-24
-                                    lg:h-28
-                                    object-cover
-                                    rounded-md
-                                  "
-                                  src="./src/images/personal.jpg"
-                                />
-                              </div>
-                              <div class="w-2/4 space-y-1 px-2">
-                                <h4 class="text-gray-400 text-xxs">
-                                  آخرین خبر
-                                </h4>
-                                <a
-                                  class="
-                                    text-aorc-blue text-sm
-                                    pb-1
-                                    tracking-tighter
-                                    font-bold
-                                    hover:text-green-400
-                                    transition-all
-                                    ease-linear
-                                  "
-                                  href="#"
-                                  >صحت و سلامت حس دنيوي را بايد از طبيب جسم جويا
-                                  شد</a
-                                >
-                                <h4 class="text-aorc-banafsh text-xxs">
-                                  لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم
-                                  از صنعت چاپ و با استفاده از طراحان گرافیک است.
-                                </h4>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="w-2/4 px-4">
-                            <div
-                              class="
-                                flex
-                                items-center
-                                space-x-reverse space-x-2
-                              "
-                            >
-                              <div class="w-1/4">
-                                <img
-                                  alt=""
-                                  class="
-                                    w-full
-                                    h-24
-                                    lg:h-28
-                                    object-cover
-                                    rounded-md
-                                  "
-                                  src="./src/images/personal.jpg"
-                                />
-                              </div>
-                              <div class="w-3/4 space-y-1 px-2">
-                                <h4 class="text-gray-400 text-xxs">
-                                  آخرین رویداد
-                                </h4>
-                                <a
-                                  class="
-                                    text-aorc-blue text-sm
-                                    pb-1
-                                    tracking-tighter
-                                    font-bold
-                                    hover:text-aorc-blue
-                                    transition-all
-                                    ease-linear
-                                  "
-                                  href="#"
-                                  >جشنواره روزه اولی ها</a
-                                >
-                                <h4 class="text-aorc-banafsh text-xxs">
-                                  لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم
-                                  از صنعت چاپ و با استفاده از طراحان گرافیک است.
-                                </h4>
-                              </div>
-                            </div>
-                          </div>
+            </div>
+            <!-- end mobile menu -->
+        </div>
+    </div>
+    <!-- end top menu -->
+    <!-- sub menu mobile -->
+    <div class="drop-down-mobile px-4 pt-7" id="subMenuMobile">
+        <div class="relative block lg:hidden max-w-md container bg-white shadow-myShadowBox sm:max-w-screen-md lg:max-w-screen-lg mx-auto h-auto rounded-2xl -mt-8 rounded-tr-none rounded-tl-none transition-all ease-in-out duration-75">
+            <ul class="mobile-menu-list p-6 pt-12 divide-y-2 divide-blue-100 lg:hidden">
+                <li class="py-2 text-sm tracking-tighter text-normal text-gray-500 flex justify-between">
+                    <a href="#">صفحه نخست</a>
+                </li>
+                <li class="about-link py-2 text-sm text-normal text-gray-500 tracking-tighter">
+                    <div class="flex justify-between">
+                        <a href="">درباره ما</a>
+                        <div class="about-arrow transform">
+                            <svg class="cursor-pointer h-4 w-4 fill-current text-gray-300" fill="currentColor"
+                                 viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path clip-rule="evenodd"
+                                      d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z"
+                                      fill-rule="evenodd"/>
+                            </svg>
                         </div>
-                      </div>
-                      <div class="w-1/4 pr-8">
-                        <ul class="list-disc space-y-3">
-                          <li
-                            class="
-                              text-xs text-gray-800
-                              font-normal
-                              hover:text-green-400
-                              transition-all
-                              ease-linear
-                            "
-                          >
-                            <a href="#">آخرین هشتگ ها</a>
-                          </li>
-                          <li
-                            class="
-                              text-xs text-gray-800
-                              font-normal
-                              hover:text-green-400
-                              transition-all
-                              ease-linear
-                            "
-                          >
-                            <a href="#">پربازدیدترین اخبـار</a>
-                          </li>
-                          <li
-                            class="
-                              text-xs text-gray-800
-                              font-normal
-                              hover:text-green-400
-                              transition-all
-                              ease-linear
-                            "
-                          >
-                            <a href="#">آخرین رویداد ها</a>
-                          </li>
-                          <li
-                            class="
-                              text-xs text-gray-800
-                              font-normal
-                              hover:text-green-400
-                              transition-all
-                              ease-linear
-                            "
-                          >
-                            <a href="#">آرشیو اخبـار</a>
-                          </li>
-                        </ul>
-                      </div>
                     </div>
-                  </div>
-                </div>
-                <!-- end about us menu -->
-              </li>
-              <li
-                class="
-                group
-                  menu-item
-                  has-children
-                  flex
-                  items-center
-                  space-x-1 space-x-reverse
-                "
-                id="tenders"
-              >
-                <a class="text-xs font-normal justify-items-center text-aorc-banafsh group-hover:text-aorc-blue group-hover:font-bold" href="#"
-                  >فـراخوان ها</a
-                >
-                <svg
-                  class="my-icon h-4 w-4 fill-current text-gray-300"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    clip-rule="evenodd"
-                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                    fill-rule="evenodd"
-                  />
-                </svg>
-                <!-- tender menu -->
-                <div class="sub-menu-tenders">
-                  <div
-                    class="
-                      max-w-xs
-                      bg-white bg-opacity-100
-                      rounded-3xl
-                      z-0
-                      relative
-                      shadow-myShadowBox
-                      sm:max-w-screen-sm
-                      md:max-w-screen-lg
-                      lg:max-w-screen-lg
-                      xl:max-w-screen-xl
-                      mx-auto
-                    "
-                  >
-                    <div class="mt-10 flex items-center p-9">
-                      <div class="w-full">
-                        <div class="flex items-center">
-                          <div
-                            class="
-                              w-1/3
-                              px-6
-                              flex
-                              items-center
-                              space-x-4 space-x-reverse
-                            "
-                          >
-                            <div class="icons-menu relative mb-4">
-                              <img
-                                alt=""
-                                class="w-20 h-auto z-10 relative mr-1 pb-1"
-                                src="./src/images/monaghese.svg"
-                              />
-                              <div
-                                class="
-                                  bg-aorc-lightblue bg-opacity-10
-                                  z-0
-                                  w-10
-                                  h-10
-                                  rounded-full rounded-br-none
-                                  absolute
-                                  bottom-0
-                                "
-                              ></div>
-                            </div>
-                            <div class="">
-                              <a
-                                class="
-                                  text-aorc-blue text-sm
-                                  pb-1
-                                  tracking-tighter
-                                  font-bold
-                                  hover:text-green-400
-                                  transition-all
-                                  ease-linear
-                                "
-                                href=""
-                                >مناقصه ها</a
-                              >
-                              <h4
-                                class="text-aorc-banafsh text-xxs font-normal"
-                              >
-                                در این بخش شما می توانید از آخرین مناقصه های
-                                منتشر شده در وب سایت بازدید نمایید
-                              </h4>
-                            </div>
-                          </div>
-                          <div
-                            class="
-                              w-1/3
-                              px-6
-                              flex
-                              items-center
-                              space-x-4 space-x-reverse
-                            "
-                          >
-                            <div class="icons-menu relative mb-4">
-                              <img
-                                alt=""
-                                class="w-20 h-auto z-10 relative mr-1 pb-1"
-                                src="./src/images/mozayedeh.svg"
-                              />
-                              <div
-                                class="
-                                  bg-aorc-lightblue bg-opacity-10
-                                  z-0
-                                  w-10
-                                  h-10
-                                  rounded-full rounded-br-none
-                                  absolute
-                                  bottom-0
-                                "
-                              ></div>
-                            </div>
-                            <div class="">
-                              <a
-                                class="
-                                  text-aorc-blue text-sm
-                                  pb-1
-                                  tracking-tighter
-                                  font-bold
-                                  hover:text-green-400
-                                  transition-all
-                                  ease-linear
-                                "
-                                href=""
-                                >مزایده ها</a
-                              >
-                              <h4
-                                class="text-aorc-banafsh text-xxs font-normal"
-                              >
-                                آخرین مزایده های انتشار یافته در وب سایت را می
-                                توانید در بخش ملاحظه نمایید
-                              </h4>
-                            </div>
-                          </div>
-                          <div
-                            class="
-                              w-1/3
-                              px-6
-                              flex
-                              items-center
-                              space-x-4 space-x-reverse
-                            "
-                          >
-                            <ul class="list-disc space-y-3">
-                              <li
-                                class="
-                                  text-xs text-gray-800
-                                  font-normal
-                                  hover:text-green-400
-                                  transition-all
-                                  ease-linear
-                                "
-                              >
-                                <a href="#">آخرین هشتگ ها</a>
-                              </li>
-                              <li
-                                class="
-                                  text-xs text-gray-800
-                                  font-normal
-                                  hover:text-green-400
-                                  transition-all
-                                  ease-linear
-                                "
-                              >
-                                <a href="#">پربازدیدترین فراخوان ها</a>
-                              </li>
-                              <li
-                                class="
-                                  text-xs text-gray-800
-                                  font-normal
-                                  hover:text-green-400
-                                  transition-all
-                                  ease-linear
-                                "
-                              >
-                                <a href="#">آرشیو کامل فراخوان ها</a>
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- end about us menu -->
-              </li>
-              <li
-                class="
-                group
-                  menu-item
-                  has-children
-                  flex
-                  items-center
-                  space-x-1 space-x-reverse
-                "
-                id="media"
-              >
-                <a class="text-xs font-normal justify-items-center text-aorc-banafsh group-hover:text-aorc-blue group-hover:font-bold" href="#"
-                  >رسـانه</a
-                >
-                <svg
-                  class="my-icon h-4 w-4 fill-current text-gray-300"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    clip-rule="evenodd"
-                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                    fill-rule="evenodd"
-                  />
-                </svg>
-                <!-- news menu -->
-                <div class="sub-menu-media">
-                  <div
-                    class="
-                      max-w-xs
-                      bg-white bg-opacity-100
-                      rounded-3xl
-                      z-0
-                      relative
-                      shadow-myShadowBox
-                      sm:max-w-screen-sm
-                      md:max-w-screen-lg
-                      lg:max-w-screen-lg
-                      xl:max-w-screen-xl
-                      mx-auto
-                    "
-                  >
-                    <div class="mt-10 flex items-center p-9">
-                      <div class="w-3/4">
-                        <div class="flex items-center">
-                          <div class="w-1/3 px-6">
-                            <div class="icons-menu relative mb-4">
-                              <img
-                                alt=""
-                                class="w-12 h-auto z-10 relative mr-1 pb-1"
-                                src="./src/images/video.svg"
-                              />
-                              <div
-                                class="
-                                  bg-aorc-lightblue bg-opacity-10
-                                  z-0
-                                  w-10
-                                  h-10
-                                  rounded-full rounded-br-none
-                                  absolute
-                                  bottom-0
-                                "
-                              ></div>
-                            </div>
-                            <a
-                              class="
-                                text-aorc-blue text-sm
-                                pb-1
-                                tracking-tighter
-                                font-bold
-                                hover:text-green-400
-                                transition-all
-                                ease-linear
-                              "
-                              href=""
-                            >
-                              ویـدیو ها</a
-                            >
-                            <h4 class="text-aorc-banafsh text-xxs">
-                              در این بخش شما می توانید به آخرین و جدیدترین
-                              ویدیوهای منتشر شده در وب سایت دسترسی داشته و آنها
-                              را ملاحظه نمایید
-                            </h4>
-                          </div>
-                          <div class="w-1/3 px-6">
-                            <div class="icons-menu relative mb-4">
-                              <img
-                                alt=""
-                                class="w-12 h-auto z-10 relative mr-1"
-                                src="./src/images/photo.svg"
-                              />
-                              <div
-                                class="
-                                  bg-aorc-lightblue bg-opacity-10
-                                  z-0
-                                  w-10
-                                  h-10
-                                  rounded-full rounded-br-none
-                                  absolute
-                                  bottom-0
-                                "
-                              ></div>
-                            </div>
-                            <a
-                              class="
-                                text-aorc-blue text-sm
-                                pb-1
-                                tracking-tighter
-                                font-bold
-                                hover:text-green-400
-                                transition-all
-                                ease-linear
-                              "
-                              href=""
-                              >گـزارش های تصویـری</a
-                            >
-                            <h4 class="text-aorc-banafsh text-xxs">
-                              در این بخش آخرین و جدیدترین گزارش های تصویری از
-                              رویـدادهـای مختلف شرکت ارایه گردیده است
-                            </h4>
-                          </div>
-                          <div class="w-1/3 px-6">
-                            <div class="icons-menu relative mb-4">
-                              <img
-                                alt=""
-                                class="w-12 h-auto z-10 relative mr-1 pb-1"
-                                src="./src/images/nashrieh.svg"
-                              />
-                              <div
-                                class="
-                                  bg-aorc-lightblue bg-opacity-10
-                                  z-0
-                                  w-10
-                                  h-10
-                                  rounded-full rounded-br-none
-                                  absolute
-                                  bottom-0
-                                "
-                              ></div>
-                            </div>
-                            <a
-                              class="
-                                text-aorc-blue text-sm
-                                pb-1
-                                tracking-tighter
-                                font-bold
-                                hover:text-green-400
-                                transition-all
-                                ease-linear
-                              "
-                              href=""
-                              >انتشـارات</a
-                            >
-                            <h4 class="text-aorc-banafsh text-xxs">
-                              در این بخش شما می توانید به نشریات ، کاتالوگ ها و
-                              تولیدات محتوایی شرکت دسترسی داشته و از آنها بازدید
-                              نمایید
-                            </h4>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="w-1/4 pr-8">
-                        <ul class="list-disc space-y-3">
-                          <li
-                            class="
-                              text-xs text-gray-800
-                              font-normal
-                              hover:text-green-400
-                              transition-all
-                              ease-linear
-                            "
-                          >
-                            <a href="#">بروشور ها</a>
-                          </li>
-                          <li
-                            class="
-                              text-xs text-gray-800
-                              font-normal
-                              hover:text-green-400
-                              transition-all
-                              ease-linear
-                            "
-                          >
-                            <a href="#">پادکست ها</a>
-                          </li>
-                          <li
-                            class="
-                              text-xs text-gray-800
-                              font-normal
-                              hover:text-green-400
-                              transition-all
-                              ease-linear
-                            "
-                          >
-                            <a href="#">نوشتار علمی</a>
-                          </li>
-                          <li
-                            class="
-                              text-xs text-gray-800
-                              font-normal
-                              hover:text-green-400
-                              transition-all
-                              ease-linear
-                            "
-                          >
-                            <a href="#">نشریات</a>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- end about us menu -->
-              </li>
-              <!-- start csr -->
-              <li
-                class="
-                group
-                  menu-item
-                  has-children
-                  flex
-                  items-center
-                  space-x-1 space-x-reverse
-                "
-                id="csr-menu"
-              >
-                <a class="text-xs font-normal justify-items-center text-aorc-banafsh group-hover:text-aorc-blue group-hover:font-bold group-hover:text-aorc-blue group-hover:font-bold" href="#"
-                  >مسئولیت های اجتماعی</a
-                >
-                <svg
-                  class="my-icon h-4 w-4 fill-current text-gray-300"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    clip-rule="evenodd"
-                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                    fill-rule="evenodd"
-                  />
-                </svg>
-                <!-- CSR menu -->
-                <div class="sub-menu-csr-menu">
-                  <div
-                    class="
-                      max-w-xs
-                      bg-white bg-opacity-100
-                      rounded-3xl
-                      z-0
-                      relative
-                      shadow-myShadowBox
-                      sm:max-w-screen-sm
-                      md:max-w-screen-lg
-                      lg:max-w-screen-lg
-                      xl:max-w-screen-xl
-                      mx-auto
-                    "
-                  >
-                    <div class="mt-10 flex items-center p-9">
-                      <div class="w-full">
-                        <div class="flex items-center">
-                          <div
-                            class="
-                              w-1/3
-                              px-6
-                              flex
-                              items-center
-                              space-x-4 space-x-reverse
-                            "
-                          >
-                            <div class="icons-menu relative mb-4">
-                              <img
-                                alt=""
-                                class="w-20 h-auto z-10 relative mr-1 pb-1"
-                                src="./src/images/monaghese.svg"
-                              />
-                              <div
-                                class="
-                                  bg-aorc-lightblue bg-opacity-10
-                                  z-0
-                                  w-10
-                                  h-10
-                                  rounded-full rounded-br-none
-                                  absolute
-                                  bottom-0
-                                "
-                              ></div>
-                            </div>
-                            <div class="">
-                              <a
-                                class="
-                                  text-aorc-blue text-sm
-                                  pb-1
-                                  tracking-tighter
-                                  font-bold
-                                  hover:text-green-400
-                                  transition-all
-                                  ease-linear
-                                "
-                                href=""
-                                >مناقصه ها</a
-                              >
-                              <h4
-                                class="text-aorc-banafsh text-xxs font-normal"
-                              >
-                                در این بخش شما می توانید از آخرین مناقصه های
-                                منتشر شده در وب سایت بازدید نمایید
-                              </h4>
-                            </div>
-                          </div>
-                          <div
-                            class="
-                              w-1/3
-                              px-6
-                              flex
-                              items-center
-                              space-x-4 space-x-reverse
-                            "
-                          >
-                            <div class="icons-menu relative mb-4">
-                              <img
-                                alt=""
-                                class="w-20 h-auto z-10 relative mr-1 pb-1"
-                                src="./src/images/mozayedeh.svg"
-                              />
-                              <div
-                                class="
-                                  bg-aorc-lightblue bg-opacity-10
-                                  z-0
-                                  w-10
-                                  h-10
-                                  rounded-full rounded-br-none
-                                  absolute
-                                  bottom-0
-                                "
-                              ></div>
-                            </div>
-                            <div class="">
-                              <a
-                                class="
-                                  text-aorc-blue text-sm
-                                  pb-1
-                                  tracking-tighter
-                                  font-bold
-                                  hover:text-green-400
-                                  transition-all
-                                  ease-linear
-                                "
-                                href=""
-                                >مزایده ها</a
-                              >
-                              <h4
-                                class="text-aorc-banafsh text-xxs font-normal"
-                              >
-                                آخرین مزایده های انتشار یافته در وب سایت را می
-                                توانید در بخش ملاحظه نمایید
-                              </h4>
-                            </div>
-                          </div>
-                          <div
-                            class="
-                              w-1/3
-                              px-6
-                              flex
-                              items-center
-                              space-x-4 space-x-reverse
-                            "
-                          >
-                            <ul class="list-disc space-y-3">
-                              <li
-                                class="
-                                  text-xs text-gray-800
-                                  font-normal
-                                  hover:text-green-400
-                                  transition-all
-                                  ease-linear
-                                "
-                              >
-                                <a href="#">آخرین هشتگ ها</a>
-                              </li>
-                              <li
-                                class="
-                                  text-xs text-gray-800
-                                  font-normal
-                                  hover:text-green-400
-                                  transition-all
-                                  ease-linear
-                                "
-                              >
-                                <a href="#">پربازدیدترین فراخوان ها</a>
-                              </li>
-                              <li
-                                class="
-                                  text-xs text-gray-800
-                                  font-normal
-                                  hover:text-green-400
-                                  transition-all
-                                  ease-linear
-                                "
-                              >
-                                <a href="#">آرشیو کامل فراخوان ها</a>
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- end about us menu -->
-              </li>
-              <!-- end csr -->
-            </ul>
-          </div>
-          <!-- user-menu -->
-          <div class="user-menu hidden lg:block">
-            <div class="flex items-center space-x-4 space-x-reverse">
-              <div class="user-profile mr-1" id="user-image">
-                <img
-                  alt=""
-                  class="user-image w-7 h-7 relative object-cover rounded-full"
-                  src="./src/images/personal.jpg"
-                />
-                <div class="submenu-user absolute left-0 mt-6">
-                  <div class="flex flex-col -mt-1">
-                    <div
-                      class="
-                        bg-green-400
-                        relative
-                        z-0
-                        mx-auto
-                        w-4
-                        h-4
-                        transform
-                        rotate-45
-                      "
-                    ></div>
-                    <ul
-                      class="
-                        divide-y
-                        border-t-4 border-green-400
-                        relative
-                        z-10
-                        -mt-3
-                        divide-blue-100 divide-opacity-50
-                        p-6
-                        w-56
-                        bg-white
-                        rounded-lg
-                        shadow-myShadowBox
-                      "
-                    >
-                      <li
-                        class="
-                          text-xs text-gray-600
-                          font-normal
-                          hover:text-green-400
-                          py-2
-                          transition-all
-                          ease-linear
-                        "
-                      >
-                        <a href="#">پروفایل</a>
-                      </li>
-                      <li
-                        class="
-                          text-xs text-gray-600
-                          font-normal
-                          hover:text-green-400
-                          py-2
-                          transition-all
-                          ease-linear
-                        "
-                      >
-                        <a href="#">ویراش مشخصات</a>
-                      </li>
-                      <li
-                        class="
-                          text-xs text-gray-600
-                          font-normal
-                          hover:text-green-400
-                          py-2
-                          transition-all
-                          ease-linear
-                        "
-                      >
-                        <a href="#">خروج از حساب کاربری</a>
-                      </li>
+                    <ul class="divide-y-2 divide-blue-100 hidden">
+                        <li class="py-2 mx-4 text-xs text-normal text-gray-400 tracking-tighter flex items-center">
+                            <div class="text-gray-300 text-md px-2">-</div>
+                            <a href="">معرفی مدیـران</a>
+                        </li>
+                        <li class="py-2 mx-4 text-xs text-normal text-gray-400 tracking-tighter flex items-center">
+                            <div class="text-gray-300 text-md px-2">-</div>
+                            <a href="">معرفی محصـولات</a>
+                        </li>
+                        <li class="py-2 mx-4 text-xs text-normal text-gray-400 tracking-tighter flex items-center">
+                            <div class="text-gray-300 text-md px-2">-</div>
+                            <a href="">معرفی واحدها</a>
+                        </li>
                     </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="search">
-                <svg
-                  class="h-5 w-5 strock-current text-gray-300"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                  />
+                </li>
+                <li class="news-link py-2 text-sm text-normal text-gray-500 tracking-tighter">
+                    <div class="flex justify-between">
+                        <a href="">اخبـار و رویدادها</a>
+                        <div class="news-arrow transform">
+                            <svg class="cursor-pointer h-4 w-4 fill-current text-gray-300" fill="currentColor"
+                                 viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path clip-rule="evenodd"
+                                      d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z"
+                                      fill-rule="evenodd"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <ul class="divide-y-2 divide-blue-100 hidden mt-2">
+                        <li class="py-2 mx-4 text-xs text-normal text-gray-400 tracking-tighter flex items-center">
+                            <div class="text-gray-300 text-md px-2">-</div>
+                            <a href="">آخـرین رویـدادهـا</a>
+                        </li>
+                        <li class="py-2 mx-4 text-xs text-normal text-gray-400 tracking-tighter flex items-center">
+                            <div class="text-gray-300 text-md px-2">-</div>
+                            <a href="">پـربازدیـدترین خبرها</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="tender-link py-2 text-sm text-normal text-gray-500 tracking-tighter">
+                    <div class="flex justify-between">
+                        <a href="">فـراخوان ها</a>
+                        <div class="tender-arrow transform">
+                            <svg class="cursor-pointer h-4 w-4 fill-current text-gray-300" fill="currentColor"
+                                 viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path clip-rule="evenodd"
+                                      d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z"
+                                      fill-rule="evenodd"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <ul class="divide-y-2 divide-blue-100 hidden mt-2">
+                        <li class="py-2 mx-4 text-xs text-normal text-gray-400 tracking-tighter flex items-center">
+                            <div class="text-gray-300 text-md px-2">-</div>
+                            <a href="">مناقصه ها</a>
+                        </li>
+                        <li class="py-2 mx-4 text-xs text-normal text-gray-400 tracking-tighter flex items-center">
+                            <div class="text-gray-300 text-md px-2">-</div>
+                            <a href="">مزایده ها</a>
+                        </li>
+                        <li class="py-1 mx-4 text-xs text-normal text-gray-400 tracking-tighter flex items-center">
+                            <div class="text-gray-300 text-md px-2">-</div>
+                            <a href="">آرشیـو</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="media-link py-2 text-sm text-normal text-gray-500 tracking-tighter">
+                    <div class="flex justify-between">
+                        <a href="">رسـانه</a>
+                        <div class="media-arrow transform">
+                            <svg class="cursor-pointer h-4 w-4 fill-current text-gray-300" fill="currentColor"
+                                 viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path clip-rule="evenodd"
+                                      d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z"
+                                      fill-rule="evenodd"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <ul class="divide-y-2 divide-blue-100 hidden mt-2">
+                        <li class="py-2 mx-4 text-xs text-normal text-gray-400 tracking-tighter flex items-center">
+                            <div class="text-gray-300 text-md px-2">-</div>
+                            <a href="">ویـدیو ها</a>
+                        </li>
+                        <li class="py-2 mx-4 text-xs text-normal text-gray-400 tracking-tighter flex items-center">
+                            <div class="text-gray-300 text-md px-2">-</div>
+                            <a href="">گـزارش های تصویری</a>
+                        </li>
+                        <li class="py-1 mx-4 text-xs text-normal text-gray-400 tracking-tighter flex items-center">
+                            <div class="text-gray-300 text-md px-2">-</div>
+                            <a href="">انتشـارات</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="csr-link py-2 text-sm text-normal text-gray-500 tracking-tighter">
+                    <div class="flex justify-between">
+                        <a href="">مسئولیت های اجتماعی</a>
+                        <div class="csr-arrow transform">
+                            <svg class="cursor-pointer h-4 w-4 fill-current text-gray-300" fill="currentColor"
+                                 viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path clip-rule="evenodd"
+                                      d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z"
+                                      fill-rule="evenodd"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <ul class="divide-y-2 divide-blue-100 hidden mt-2">
+                        <li class="py-2 mx-4 text-xs text-normal text-gray-400 tracking-tighter flex items-center">
+                            <div class="text-gray-300 text-md px-2">-</div>
+                            <a href="">کارکنان و مشتریان</a>
+                        </li>
+                        <li class="py-2 mx-4 text-xs text-normal text-gray-400 tracking-tighter flex items-center">
+                            <div class="text-gray-300 text-md px-2">-</div>
+                            <a href="">روابط عمومی و ستاد اقامه نماز</a>
+                        </li>
+                        <li class="py-1 mx-4 text-xs text-normal text-gray-400 tracking-tighter flex items-center">
+                            <div class="text-gray-300 text-md px-2">-</div>
+                            <a href="">انرژی</a>
+                        </li>
+                        <li class="py-1 mx-4 text-xs text-normal text-gray-400 tracking-tighter flex items-center">
+                            <div class="text-gray-300 text-md px-2">-</div>
+                            <a href="">حقوقی و پیمانها</a>
+                        </li>
+                        <li class="py-1 mx-4 text-xs text-normal text-gray-400 tracking-tighter flex items-center">
+                            <div class="text-gray-300 text-md px-2">-</div>
+                            <a href="">مالی</a>
+                        </li>
+                        <li class="py-1 mx-4 text-xs text-normal text-gray-400 tracking-tighter flex items-center">
+                            <div class="text-gray-300 text-md px-2">-</div>
+                            <a href="">HSE</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- end sun menu mobile -->
+    
+    <!-- start button link -->
+    <div id="header-button" class="absolute left-10 bottom-12 space-y-2 z-10 grid justify-end hidden md:block">
+        <div class="flex group items-center hover:bg-white rounded-full px-3 py-1 bg-transparent transition-all duration-300 shadow-none hover:shadow-myShadowBox">
+            <h3 class="text-aorc-textabi mr-auto opacity-0 group-hover:opacity-100 transform -translate-x-4 group-hover:translate-x-0 duration-300 text-xs font-thin py-1 px-2 tracking-tighter">
+                برنامه ها و رویدادهای گذشته
+            </h3>
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-aorc-blue" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+            </svg>
+        </div>
+        <div class="flex group items-center hover:bg-white rounded-full px-3 py-1 bg-transparent transition-all duration-300 shadow-none hover:shadow-myShadowBox">
+            <h3 class="text-aorc-textabi mr-auto opacity-0 group-hover:opacity-100 transform -translate-x-4 group-hover:translate-x-0 duration-300 text-xs font-thin py-1 px-2 tracking-tighter">
+                نقشه موقعیت مکانی شرکت
+            </h3>
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-aorc-blue" fill="none" viewBox="0 0 24 24"
+                 stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+            </svg>
+        </div>
+        <div class="flex group items-center hover:bg-white rounded-full px-3 py-1 bg-transparent transition-all duration-300 shadow-none hover:shadow-myShadowBox">
+            <h3 class="text-aorc-textabi mr-auto opacity-0 group-hover:opacity-100 transform -translate-x-4 group-hover:translate-x-0 duration-300 text-xs font-thin py-1 px-2 tracking-tighter">
+                ما در شبکه های اجتماعی
+            </h3>
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-aorc-blue" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
+            </svg>
+        </div>
+        
+    </div>
+    <!-- end button link -->
+    
+</header>
+<!-- end header -->
+<!-- notification block -->
+<div id="notification" class="hidden md:block fixed rounded-lg backdrop-blur-lg shadow-myShadowBox border-2 border-white right-12 h-64 w-48 bottom-10 opacity-0 duration-500 transition-all transform z-50">
+    <div class="overflow-hidden w-full h-full">
+        <!-- <img class="w-full h-full object-cover rounded-lg" src="./src/images/poster.jpg" alt=""> -->
+        <div class="">
+            <div id="notiClose" class="cursor-pointer absolute -inset-x-3 -inset-y-3 bg-gradient-to-r from-aorc-blue to-aorc-bnf w-6 h-6 rounded-full flex">
+                <svg xmlns="http://www.w3.org/2000/svg" class="text-white h-5 w-5 mx-auto justify-center pt-1"
+                    viewBox="0 0 20 20" fill="currentColor">
+                    <path
+                            fill-rule="evenodd"
+                            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                            clip-rule="evenodd"
+                    />
                 </svg>
-              </div>
-              <div
-                class="
-                  languege
-                  text-xs
-                  flex-col
-                  justify-items-center
-                  -space-y-1
-                "
-              >
-                <h4 class="text-green-400 font-extrabold"><a href="">FA</a></h4>
-                <h4 class="text-gray-200 font-normal"><a href="">EN</a></h4>
-              </div>
             </div>
-          </div>
-          <!-- end user-menu -->
-          <!-- mobile menu -->
-          <div
-            class="cursor-pointer mobile-menu block lg:hidden"
-            id="mobileMenuIcon"
-          >
-            <svg
-              class="text-gray-400 cursor-pointer stroke-current h-5 w-5"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                clip-rule="evenodd"
-                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h6a1 1 0 110 2H4a1 1 0 01-1-1z"
-                fill-rule="evenodd"
-              />
-            </svg>
-          </div>
-          <!-- end mobile menu -->
         </div>
-      </div>
-      <!-- end top menu -->
-      <!-- sub menu mobile -->
-      <div class="drop-down-mobile px-4 pt-7" id="subMenuMobile">
-        <div
-          class="
-            relative
-            block
-            lg:hidden
-            max-w-md
-            container
-            bg-white
-            shadow-myShadowBox
-            sm:max-w-screen-md
-            lg:max-w-screen-lg
-            mx-auto
-            h-auto
-            rounded-2xl
-            -mt-8
-            rounded-tr-none rounded-tl-none
-            transition-all
-            ease-in-out
-            duration-75
-          "
-        >
-          <ul
-            class="
-              mobile-menu-list
-              p-6
-              pt-12
-              divide-y-2 divide-blue-100
-              lg:hidden
-            "
-          >
-            <li
-              class="
-                py-2
-                text-sm
-                tracking-tighter
-                text-normal text-gray-500
-                flex
-                justify-between
-              "
-            >
-              <a href="#">صفحه نخست</a>
-            </li>
-            <li
-              class="
-                about-link
-                py-2
-                text-sm text-normal text-gray-500
-                tracking-tighter
-              "
-            >
-              <div class="flex justify-between">
-                <a href="">درباره ما</a>
-                <div class="about-arrow transform">
-                  <svg
-                    class="cursor-pointer h-4 w-4 fill-current text-gray-300"
-                    fill="currentColor"
-                    viewBox="0 0 20 20"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      clip-rule="evenodd"
-                      d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z"
-                      fill-rule="evenodd"
-                    />
-                  </svg>
+    </div>
+</div>
+<!-- end notification block -->
+<!-- arrow -->
+<div id="arrowSection" class="fixed text-center bottom-3 duration-300 transition-all left-1/2 border-2 w-5 h-9 border-aorc-abi rounded-full">
+    <div class="mx-auto">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-3 mx-auto w-3 mt-2 animate-bounce text-aorc-abi opacity-100" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+        </svg>
+    </div>
+</div>
+<!-- end arrow -->
+
+<!-- news section -->
+<section id="news" class="relative">
+    <div class="max-w-sm md:max-w-4xl mx-auto flex justify-center my-12 mb-96 md:mb-16">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="news-item group relative p-4 flex justify-center w-full">
+            <div class="transition-all bg-white duration-500 group-hover:translate-y-4 transform shadow-myShadowBox rounded-2xl overflow-hidden z-30 mx-3">
+                <a href="#">
+                    <img class="news-image" src="./src/images/news01.jpg" alt="">
+                    <div class="p-7">
+                        <a href="#" class="mb-3 transition-all duration-500 tracking-tighter text-aorc-blue font-bold text-md leading-7">واکسن ایرانی آنفلوآنزا وارد چرخه مصرف شد ارائه مدارک واکسن برکت به سازمان جهانی بهداشت
+                        </a>
+                        <h4 class="my-4 text-xs transition-all duration-500 text-aorc-textabi tracking-tight leading-6">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. </h4>
+                        <div class="flex justify-between">
+                            <div class="date flex items-center space-x-1 space-x-reverse">
+                                <svg class="fill-current text-gray-300 transition-all duration-500 w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"></path><path d="M13 7h-2v5.414l3.293 3.293 1.414-1.414L13 11.586z"></path></svg>
+                                <h4 class="text-xs text-gray-400 tracking-tight leading-5 transition-all duration-500">12 اردیبهشت 1400</h4>
+                            </div>
+                            <div class="read-more flex justify-center items-center space-x-2 space-x-reverse">
+                                <a href="#" class="text-xs font-bold text-aorc-abi tracking-tight leading-5 transition-all duration-500">ادامه مطلب</a>
+                                <a class="p-1 mx-auto flex justify-center items-center bg-gradient-to-r from-aorc-blue to-aorc-bnf transition-all duration-300  w-6 h-6 rounded-full" href="#">
+                                    <svg class="text-white fill-current" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12.707 17.293 8.414 13H18v-2H8.414l4.293-4.293-1.414-1.414L4.586 12l6.707 6.707z"></path></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="absolute bg-aorc-lightabi w-full h-96 -top-3 z-10 rounded-2xl transition-all duration-500 transform"></div>
+        </div>
+        <div class="w-full pt-6 z-10">
+            <!-- news title block -->
+            <div class="titleBlock">
+                <div class="titleBlockGroup relative z-20 flex space-x-4 space-x-reverse items-center pt-16">
+                    <div class="flex relative mr-8 group">
+                        <svg class="titleblock-icon text-white fill-current w-11 h-11 absolute -inset-x-3 -top-3 z-20" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="filter: drop-shadow(1px 5px 4px rgba(84, 86, 87, 0.459));"><path d="M21 11h-3V4a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v14c0 1.654 1.346 3 3 3h14c1.654 0 3-1.346 3-3v-6a1 1 0 0 0-1-1zM5 19a1 1 0 0 1-1-1V5h12v13c0 .351.061.688.171 1H5zm15-1a1 1 0 0 1-2 0v-5h2v5z"></path><path d="M6 7h8v2H6zm0 4h8v2H6zm5 4h3v2h-3z"></path></svg>
+                        <a href="#" class="titleblock-title  bg-gradient-to-r from-aorc-blue to-aorc-banafsh px-12 py-2 rounded-full text-sm shadow-md tracking-tight font-bold text-white">اخبـار و رویدادها</a>
+                    </div>
+                    <a href="#" class="text-xs hover:text-aorc-sabz transition-all duration-300 text-gray-400">آرشیو</a>
+                    <div class="title-bg w-28 h-28 absolute -top-0 -inset-x-3 z-0"></div>
                 </div>
-              </div>
-              <ul class="divide-y-2 divide-blue-100 hidden">
-                <li
-                  class="
-                    py-2
-                    mx-4
-                    text-xs text-normal text-gray-400
-                    tracking-tighter
-                    flex
-                    items-center
-                  "
-                >
-                  <div class="text-gray-300 text-md px-2">-</div>
-                  <a href="">معرفی مدیـران</a>
-                </li>
-                <li
-                  class="
-                    py-2
-                    mx-4
-                    text-xs text-normal text-gray-400
-                    tracking-tighter
-                    flex
-                    items-center
-                  "
-                >
-                  <div class="text-gray-300 text-md px-2">-</div>
-                  <a href="">معرفی محصـولات</a>
-                </li>
-                <li
-                  class="
-                    py-2
-                    mx-4
-                    text-xs text-normal text-gray-400
-                    tracking-tighter
-                    flex
-                    items-center
-                  "
-                >
-                  <div class="text-gray-300 text-md px-2">-</div>
-                  <a href="">معرفی واحدها</a>
-                </li>
-              </ul>
-            </li>
-            <li
-              class="
-                news-link
-                py-2
-                text-sm text-normal text-gray-500
-                tracking-tighter
-              "
-            >
-              <div class="flex justify-between">
-                <a href="">اخبـار و رویدادها</a>
-                <div class="news-arrow transform">
-                  <svg
-                    class="cursor-pointer h-4 w-4 fill-current text-gray-300"
-                    fill="currentColor"
-                    viewBox="0 0 20 20"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      clip-rule="evenodd"
-                      d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z"
-                      fill-rule="evenodd"
-                    />
-                  </svg>
+                <h3 class="text-xs tracking-tighter text-aorc-textabi mt-4">در ایـن بخش آخـرین اخبار و تـازه های شرکت را تقـدیم خواهیــم کرد</h3>
+            </div>
+            <!-- end news title -->
+            <div class="pt-4 event-item">
+                <div class="relative flex justify-center group eventGroup z-10">
+                    <div class="event-image absolute w-full px-6 top-4 z-10">
+                        <img class="h-28 w-full object-cover shadow-lg rounded-2xl" src="./src/images/news01.jpg" alt="">
+                    </div>
+                    <div class="event-des bg-white z-0 absolute top-20 mx-auto shadow-myShadowBox rounded-2xl w-full pt-10">
+                        <div class="p-7">
+                            <a href="#" class="mb-3 pt-12 tracking-tighter text-aorc-blue font-bold text-sm leading-7">بازهم تـوان و تخصص همکاران جوان آبـادانی در خلق افتـخاری دیگر</a>
+                            <h4 class="selection:bg-yellow-300 my-2 text-xs text-aorc-textabi tracking-tight leading-6">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. </h4>
+                            <div class="flex justify-between">
+                                <div class="date flex items-center space-x-1 space-x-reverse">
+                                    <svg class="fill-current text-gray-400 text-opacity-70 w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"></path><path d="M13 7h-2v5.414l3.293 3.293 1.414-1.414L13 11.586z"></path></svg>
+                                    <h4 class="text-xs text-gray-400 tracking-tight leading-5">12 اردیبهشت 1400</h4>
+                                </div>
+                                <div class="read-more flex justify-center items-center space-x-2 space-x-reverse">
+                                    <a href="#" class="duration-300 transition-all text-xs font-bold text-aorc-abi tracking-tight leading-5">ادامه مطلب</a>
+                                    <a class="p-1 mx-auto flex justify-center items-center bg-gradient-to-r from-aorc-blue to-aorc-bnf transition-all duration-300  w-6 h-6 rounded-full shadow-myShadowBox" href="#">
+                                        <svg class="text-white fill-current" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12.707 17.293 8.414 13H18v-2H8.414l4.293-4.293-1.414-1.414L4.586 12l6.707 6.707z"></path></svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
-              <ul class="divide-y-2 divide-blue-100 hidden mt-2">
-                <li
-                  class="
-                    py-2
-                    mx-4
-                    text-xs text-normal text-gray-400
-                    tracking-tighter
-                    flex
-                    items-center
-                  "
-                >
-                  <div class="text-gray-300 text-md px-2">-</div>
-                  <a href="">آخـرین رویـدادهـا</a>
-                </li>
-                <li
-                  class="
-                    py-2
-                    mx-4
-                    text-xs text-normal text-gray-400
-                    tracking-tighter
-                    flex
-                    items-center
-                  "
-                >
-                  <div class="text-gray-300 text-md px-2">-</div>
-                  <a href="">پـربازدیـدترین خبرها</a>
-                </li>
-              </ul>
-            </li>
-            <li
-              class="
-                tender-link
-                py-2
-                text-sm text-normal text-gray-500
-                tracking-tighter
-              "
-            >
-              <div class="flex justify-between">
-                <a href="">فـراخوان ها</a>
-                <div class="tender-arrow transform">
-                  <svg
-                    class="cursor-pointer h-4 w-4 fill-current text-gray-300"
-                    fill="currentColor"
-                    viewBox="0 0 20 20"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      clip-rule="evenodd"
-                      d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z"
-                      fill-rule="evenodd"
-                    />
-                  </svg>
+            </div>
+        </div>
+      </div>  
+    </div>
+    <!-- <div class="magentaBg"></div> -->
+</section>
+<!-- end news -->
+<!-- tender -->
+<section class="relative max-w-sm md:max-w-5xl mx-auto flex justify-center pb-16">
+    <div class="flex flex-wrap md:flex-nowrap w-full relative z-10 justify-center items-center space-x-12 space-x-reverse">
+        <div class="w-full order-2 md:w-2/3 md:order-1 grid grid-cols-1 justify-items-end pt-3 md:pt-24">
+            <!-- tender first item -->
+            <div class="group py-3 w-auto text-left tender-item">
+                <div class="transform table px-8 group-hover:-translate-x-2 bg-gradient-to-r from-white to-white group-hover:from-aorc-blue group-hover:to-aorc-bnf transition-all duration-500 p-2 rounded-xl shadow-myShadowBox">
+                    <div class="flex justify-items-end flex-row-reverse items-center space-x-4">
+                        <a class=" flex justify-center shadow-lg items-center transition-all duration-300 bg-gradient-to-r from-aorc-blue to-aorc-bnf group-hover:from-white group-hover:to-white w-10 p-2 rounded-full" href="#">   
+                            <svg class="text-white group-hover:text-aorc-bnf transition-all duration-300 fill-current" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19.903 8.586a.997.997 0 0 0-.196-.293l-6-6a.997.997 0 0 0-.293-.196c-.03-.014-.062-.022-.094-.033a.991.991 0 0 0-.259-.051C13.04 2.011 13.021 2 13 2H6c-1.103 0-2 .897-2 2v16c0 1.103.897 2 2 2h12c1.103 0 2-.897 2-2V9c0-.021-.011-.04-.013-.062a.952.952 0 0 0-.051-.259c-.01-.032-.019-.063-.033-.093zM16.586 8H14V5.414L16.586 8zM6 20V4h6v5a1 1 0 0 0 1 1h5l.002 10H6z"></path><path d="M8 12h8v2H8zm0 4h8v2H8zm0-8h2v2H8z"></path></svg>
+                        </a>
+                        <div class="w-full">
+                            <h4 class="text-left text-xs text-gray-400 py-1 group-hover:text-white tracking-tight leading-5 ">12 اردیبهشت 1400</h4>
+                            <a class="text-left tracking-tighter transition-all duration-300 group-hover:text-white text-aorc-blue font-bold text-sm" href="">فراخوان ارزیابی کیفی مناقصه گران شماره آگهی مناقصه :99/L/49
+                            </a>
+                            <div class="-ml-2 flex justify-end pt-2 md:space-x-6 items-center space-x-reverse text-xs tracking-tight group-hover:text-white text-aorc-sabz">
+                                <div class="tags-tender group-hover:text-white items-center flex divide-x divide-x-reverse divide-gray-200">کلید واژه ها :
+                                    <h4 class="px-2 text-xs group-hover:text-white text-gray-400 tracking-tight leading-5">باغبانی</h4>
+                                    <h4 class="px-2 text-xs group-hover:text-white text-gray-400 tracking-tight leading-5">کله پزی</h4>
+                                    <h4 class="px-2 text-xs group-hover:text-white text-gray-400 tracking-tight leading-5">طبیعت</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
-              <ul class="divide-y-2 divide-blue-100 hidden mt-2">
-                <li
-                  class="
-                    py-2
-                    mx-4
-                    text-xs text-normal text-gray-400
-                    tracking-tighter
-                    flex
-                    items-center
-                  "
-                >
-                  <div class="text-gray-300 text-md px-2">-</div>
-                  <a href="">مناقصه ها</a>
-                </li>
-                <li
-                  class="
-                    py-2
-                    mx-4
-                    text-xs text-normal text-gray-400
-                    tracking-tighter
-                    flex
-                    items-center
-                  "
-                >
-                  <div class="text-gray-300 text-md px-2">-</div>
-                  <a href="">مزایده ها</a>
-                </li>
-                <li
-                  class="
-                    py-1
-                    mx-4
-                    text-xs text-normal text-gray-400
-                    tracking-tighter
-                    flex
-                    items-center
-                  "
-                >
-                  <div class="text-gray-300 text-md px-2">-</div>
-                  <a href="">آرشیـو</a>
-                </li>
-              </ul>
-            </li>
-            <li
-              class="
-                media-link
-                py-2
-                text-sm text-normal text-gray-500
-                tracking-tighter
-              "
-            >
-              <div class="flex justify-between">
-                <a href="">رسـانه</a>
-                <div class="media-arrow transform">
-                  <svg
-                    class="cursor-pointer h-4 w-4 fill-current text-gray-300"
-                    fill="currentColor"
-                    viewBox="0 0 20 20"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      clip-rule="evenodd"
-                      d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z"
-                      fill-rule="evenodd"
-                    />
-                  </svg>
+            </div>
+            <!-- end tender first item -->
+            <!-- tender item -->
+            <div class="group py-3 w-auto text-left tender-item">
+                <div class="transform table px-8 group-hover:-translate-x-2 bg-gradient-to-r from-white to-white group-hover:from-aorc-blue group-hover:to-aorc-bnf transition-all duration-500 p-2 rounded-xl shadow-myShadowBox">
+                    <div class="flex justify-items-end flex-row-reverse items-center space-x-4">
+                        <a class=" flex justify-center shadow-lg items-center transition-all duration-300 bg-gradient-to-r from-aorc-blue to-aorc-bnf group-hover:from-white group-hover:to-white w-10 p-2 rounded-full" href="#">   
+                            <svg class="text-white group-hover:text-aorc-bnf transition-all duration-300 fill-current" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19.903 8.586a.997.997 0 0 0-.196-.293l-6-6a.997.997 0 0 0-.293-.196c-.03-.014-.062-.022-.094-.033a.991.991 0 0 0-.259-.051C13.04 2.011 13.021 2 13 2H6c-1.103 0-2 .897-2 2v16c0 1.103.897 2 2 2h12c1.103 0 2-.897 2-2V9c0-.021-.011-.04-.013-.062a.952.952 0 0 0-.051-.259c-.01-.032-.019-.063-.033-.093zM16.586 8H14V5.414L16.586 8zM6 20V4h6v5a1 1 0 0 0 1 1h5l.002 10H6z"></path><path d="M8 12h8v2H8zm0 4h8v2H8zm0-8h2v2H8z"></path></svg>
+                        </a>
+                        <div class="w-full">
+                            <h4 class="text-left text-xs group-hover:text-white text-gray-400 py-1 tracking-tight leading-5 ">12 اردیبهشت 1400</h4>
+                            <a class="text-left tracking-tighter transition-all duration-300 group-hover:text-white text-aorc-blue font-bold text-sm" href="">فراخوان ارزیابی کیفی مناقصه گران ( مرحله دوم ) شماره آگهی مناقصه :99/L/49
+                            </a>
+                            <div class="-ml-2 flex justify-end pt-2 md:space-x-6 items-center space-x-reverse text-xs tracking-tight group-hover:text-white text-aorc-sabz">
+                                <div class="tags-tender items-center flex divide-x divide-x-reverse divide-gray-200">کلید واژه ها :
+                                    <h4 class="px-2 text-xs group-hover:text-white text-gray-400 tracking-tight leading-5">باغبانی</h4>
+                                    <h4 class="px-2 text-xs group-hover:text-white text-gray-400 tracking-tight leading-5">کله پزی</h4>
+                                    <h4 class="px-2 text-xs group-hover:text-white text-gray-400 tracking-tight leading-5">طبیعت</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
-              <ul class="divide-y-2 divide-blue-100 hidden mt-2">
-                <li
-                  class="
-                    py-2
-                    mx-4
-                    text-xs text-normal text-gray-400
-                    tracking-tighter
-                    flex
-                    items-center
-                  "
-                >
-                  <div class="text-gray-300 text-md px-2">-</div>
-                  <a href="">ویـدیو ها</a>
-                </li>
-                <li
-                  class="
-                    py-2
-                    mx-4
-                    text-xs text-normal text-gray-400
-                    tracking-tighter
-                    flex
-                    items-center
-                  "
-                >
-                  <div class="text-gray-300 text-md px-2">-</div>
-                  <a href="">گـزارش های تصویری</a>
-                </li>
-                <li
-                  class="
-                    py-1
-                    mx-4
-                    text-xs text-normal text-gray-400
-                    tracking-tighter
-                    flex
-                    items-center
-                  "
-                >
-                  <div class="text-gray-300 text-md px-2">-</div>
-                  <a href="">انتشـارات</a>
-                </li>
-              </ul>
-            </li>
-          </ul>
+            </div>
+            <!-- end tender item -->
+            <!-- tender item -->
+            <div class="group py-3 w-auto text-left tender-item">
+                <div class="transform table px-8 group-hover:-translate-x-2 bg-gradient-to-r from-white to-white group-hover:from-aorc-blue group-hover:to-aorc-bnf transition-all duration-500 p-2 rounded-xl shadow-myShadowBox">
+                    <div class="flex justify-items-end flex-row-reverse items-center space-x-4">
+                        <a class=" flex justify-center shadow-lg items-center transition-all duration-300 bg-gradient-to-r from-aorc-blue to-aorc-bnf group-hover:from-white group-hover:to-white w-10 p-2 rounded-full" href="#">   
+                            <svg class="text-white group-hover:text-aorc-bnf transition-all duration-300 fill-current" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19.903 8.586a.997.997 0 0 0-.196-.293l-6-6a.997.997 0 0 0-.293-.196c-.03-.014-.062-.022-.094-.033a.991.991 0 0 0-.259-.051C13.04 2.011 13.021 2 13 2H6c-1.103 0-2 .897-2 2v16c0 1.103.897 2 2 2h12c1.103 0 2-.897 2-2V9c0-.021-.011-.04-.013-.062a.952.952 0 0 0-.051-.259c-.01-.032-.019-.063-.033-.093zM16.586 8H14V5.414L16.586 8zM6 20V4h6v5a1 1 0 0 0 1 1h5l.002 10H6z"></path><path d="M8 12h8v2H8zm0 4h8v2H8zm0-8h2v2H8z"></path></svg>
+                        </a>
+                        <div class="w-full">
+                            <h4 class="text-left text-xs text-gray-400 py-1 group-hover:text-white tracking-tight leading-5 ">12 اردیبهشت 1400</h4>
+                            <a class="text-left tracking-tighter transition-all duration-300 group-hover:text-white text-aorc-blue font-bold text-sm" href="">فراخوان ارزیابی کیفی مناقصه گران شماره آگهی مناقصه :99/L/49
+                            </a>
+                            <div class="-ml-2 flex justify-end pt-2 md:space-x-6 items-center space-x-reverse text-xs tracking-tight group-hover:text-white text-aorc-sabz">
+                                <div class="tags-tender group-hover:text-white items-center flex divide-x divide-x-reverse divide-gray-200">کلید واژه ها :
+                                    <h4 class="px-2 text-xs group-hover:text-white text-gray-400 tracking-tight leading-5">باغبانی</h4>
+                                    <h4 class="px-2 text-xs group-hover:text-white text-gray-400 tracking-tight leading-5">کله پزی</h4>
+                                    <h4 class="px-2 text-xs group-hover:text-white text-gray-400 tracking-tight leading-5">طبیعت</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end tender item -->
         </div>
-      </div>
-      <!-- end sun menu mobile -->
-      <!-- notofication block -->
-      <div
-        id="notification"
-        class="
-          hidden
-          md:block
-          absolute
-          rounded-lg
-          shadow-myShadowBox
-          border-2 border-white
-          right-12
-          h-64
-          w-48
-          bottom-0
-          opacity-0
-          duration-500
-          transition-all
-          transform
-        "
-      >
-        <div class="relative">
-          <div
-            id="notiClose"
-            class="
-              cursor-pointer
-              absolute
-              -inset-x-3 -inset-y-3
-              bg-gradient-to-r
-              from-aorc-blue
-              to-aorc-bnf
-              w-6
-              h-6
-              rounded-full
-              flex
-            "
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="text-white h-5 w-5 mx-auto justify-center pt-1"
-              viewBox="0 0 20 20"
-              fill="currentColor"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                clip-rule="evenodd"
-              />
-            </svg>
-          </div>
+        <div class="w-full order-1 md:order-2 md:w-1/3">
+            <!-- tender title block -->
+            <div class="titleBlock">
+                <div class="titleBlockGroup relative z-20 flex space-x-4 space-x-reverse items-center pt-16">
+                    <div class="flex relative mr-8 group">
+                        <!-- <svg class="titleblock-icon text-white fill-current w-11 h-11 absolute -inset-x-3 -top-3 z-20" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="filter: drop-shadow(1px 5px 4px rgba(84, 86, 87, 0.459));"><path d="M4 19h2c0 1.103.897 2 2 2h8c1.103 0 2-.897 2-2h2c1.103 0 2-.897 2-2V7c0-1.103-.897-2-2-2h-2c0-1.103-.897-2-2-2H8c-1.103 0-2 .897-2 2H4c-1.103 0-2 .897-2 2v10c0 1.103.897 2 2 2zM20 7v10h-2V7h2zM8 5h8l.001 14H8V5zM4 7h2v10H4V7z"></path></svg> -->
+                        <svg class="titleblock-icon text-white fill-current w-11 h-11 absolute -inset-x-3 -top-3 z-20" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="filter: drop-shadow(1px 5px 4px rgba(84, 86, 87, 0.459));"><path d="M19.903 8.586a.997.997 0 0 0-.196-.293l-6-6a.997.997 0 0 0-.293-.196c-.03-.014-.062-.022-.094-.033a.991.991 0 0 0-.259-.051C13.04 2.011 13.021 2 13 2H6c-1.103 0-2 .897-2 2v16c0 1.103.897 2 2 2h12c1.103 0 2-.897 2-2V9c0-.021-.011-.04-.013-.062a.952.952 0 0 0-.051-.259c-.01-.032-.019-.063-.033-.093zM16.586 8H14V5.414L16.586 8zM6 20V4h6v5a1 1 0 0 0 1 1h5l.002 10H6z"></path><path d="M8 12h8v2H8zm0 4h8v2H8zm0-8h2v2H8z"></path></svg>
+                        <a href="#" class="titleblock-title  bg-gradient-to-r from-aorc-blue to-aorc-banafsh px-12 py-2 rounded-full text-sm shadow-md tracking-tight font-bold text-white">فـراخوان ها</a>
+                    </div>
+                    <a href="#" class="text-xs hover:text-aorc-sabz transition-all duration-300 text-gray-400">آرشیو</a>
+                    <div class="title-bg w-28 h-28 absolute -top-0 -inset-x-3 z-0"></div>
+                </div>
+                <h3 class="text-xs tracking-tighter text-aorc-textabi mt-4">در ایـن بخش آخـرین اخبار و تـازه های شرکت را تقـدیم خواهیــم کرد</h3>
+            </div>
+            <!-- end tender title -->
+            <!-- tender tag -->
+            <div class="tender-voc flex flex-wrap justify-start justify-items-start items-center space-x-4 space-x-reverse pt-5">
+                <a class="bg-white hover:bg-aorc-sabz hover:text-white transition-all duration-300 shadow-myShadowBox px-2 py-1 my-1 rounded-full text-xs text-aorc-lightbanafsh" href="#">چمن زنی</a>
+                <a class="bg-white hover:bg-aorc-sabz hover:text-white transition-all duration-300 shadow-myShadowBox px-2 py-1 my-1 rounded-full text-xs text-aorc-lightbanafsh" href="#">ساخت لوله</a>
+                <a class="bg-white hover:bg-aorc-sabz hover:text-white transition-all duration-300 shadow-myShadowBox px-2 py-1 my-1 rounded-full text-xs text-aorc-lightbanafsh" href="#">تجهیزات پالایشی</a>
+                <a class="bg-white hover:bg-aorc-sabz hover:text-white transition-all duration-300 shadow-myShadowBox px-2 py-1 my-1 rounded-full text-xs text-aorc-lightbanafsh" href="#">لوازم ایمنی</a>
+                <a class="bg-white hover:bg-aorc-sabz hover:text-white transition-all duration-300 shadow-myShadowBox px-2 py-1 my-1 rounded-full text-xs text-aorc-lightbanafsh" href="#">تجهیزات مخابراتی</a>
+            </div>
+            <!-- end tender tag -->
+            <!-- start download form -->
+            <div class="tender-download flex justify-items-end space-x-reverse items-center space-x-4 group pt-4">
+                <a class="group flex justify-center shadow-myShadowBox items-center transition-all duration-300 bg-white group-hover:bg-green-400 w-10 p-2 rounded-full" href="#">   
+                    <svg class="text-aorc-sabz group-hover:text-white transition-all duration-300 fill-current" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M18.948 11.112C18.511 7.67 15.563 5 12.004 5c-2.756 0-5.15 1.611-6.243 4.15-2.148.642-3.757 2.67-3.757 4.85 0 2.757 2.243 5 5 5h1v-2h-1c-1.654 0-3-1.346-3-3 0-1.404 1.199-2.757 2.673-3.016l.581-.102.192-.558C8.153 8.273 9.898 7 12.004 7c2.757 0 5 2.243 5 5v1h1c1.103 0 2 .897 2 2s-.897 2-2 2h-2v2h2c2.206 0 4-1.794 4-4a4.008 4.008 0 0 0-3.056-3.888z"></path><path d="M13.004 14v-4h-2v4h-3l4 5 4-5z"></path></svg>
+                </a>
+                <div class="w-full">
+                    <a href="#" class="text-xs text-aorc-textabi py-1 tracking-tighter font-light leading-5">مشاهده و دانلود فرم های مورد نیاز</a>
+                </div>
+            </div>
+            <!-- start download form -->
         </div>
-      </div>
-      <!-- end notofication block -->
-      <!-- start button link -->
-      <div
-        id="header-button"
-        class="absolute left-10 bottom-12 space-y-2 z-10 grid justify-end"
-      >
-        <div class="flex group">
-          <h3
-            class="
-              text-aorc-banafsh
-              mr-auto
-              opacity-0
-              group-hover:opacity-100
-              transform
-              -translate-x-4
-              group-hover:translate-x-2
-              duration-300
-              text-xs
-              font-thin
-              py-1
-              px-2
-              tracking-tighter
-              bg-white
-              rounded-full
-              shadow-myShadowBox
-            "
-          >
-            برنامه ها و رویدادهای آتی
-          </h3>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="text-aorc-bnf h-6 w-6"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
-            />
-          </svg>
+    </div>
+    <div class="absolute z-0 bg-aorc-lightabi top-4 rounded-2xl max-w-md md:max-w-xs px-14 w-full h-48 md:h-96"></div>
+</section>
+<!-- end tender -->
+<!-- multimedia -->
+<section class="relative max-w-sm md:max-w-3xl lg:max-w-5xl mx-auto md:my-20 flex justify-center">
+    <div class="grid grid-cols-1 md:grid-cols-2 md:gap-10 relative z-10 justify-center">
+        <div class="w-full">
+            <!-- multimedia title block -->
+                <div class="titleBlock">
+                    <div class="titleBlockGroup relative z-20 flex space-x-4 space-x-reverse items-center pt-16">
+                        <div class="flex relative mr-8 group">
+                            <svg class="titleblock-icon text-white fill-current w-11 h-11 absolute -inset-x-3 -top-3 z-20" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="filter: drop-shadow(1px 5px 4px rgba(84, 86, 87, 0.459));"><path d="M4 19h2c0 1.103.897 2 2 2h8c1.103 0 2-.897 2-2h2c1.103 0 2-.897 2-2V7c0-1.103-.897-2-2-2h-2c0-1.103-.897-2-2-2H8c-1.103 0-2 .897-2 2H4c-1.103 0-2 .897-2 2v10c0 1.103.897 2 2 2zM20 7v10h-2V7h2zM8 5h8l.001 14H8V5zM4 7h2v10H4V7z"></path></svg>
+                            <a href="#" class="titleblock-title  bg-gradient-to-r from-aorc-blue to-aorc-banafsh px-12 py-2 rounded-full text-sm shadow-md tracking-tight font-bold text-white">چنــدرسـانـه ای</a>
+                        </div>
+                        <a href="#" class="text-xs hover:text-aorc-sabz transition-all duration-300 text-gray-400">آرشیو</a>
+                        <div class="title-bg w-28 h-28 absolute -top-0 -inset-x-3 z-0"></div>
+                    </div>
+                    <h3 class="text-xs tracking-tighter text-aorc-textabi mt-4">در ایـن بخش آخـرین اخبار و تـازه های شرکت را تقـدیم خواهیــم کرد</h3>
+                </div>
+            <!-- end multimedia title -->
+            <!-- multimedia item -->                
+            <div class="relative w-full group multimedia-group multimedia-three my-5">
+                <img class="w-full multimedia-image object-cover shadow-lg transition-all duration-300 rounded-2xl z-0" src="./src/images/news02.jpg" alt="">
+                <div class="w-full multimedia-des absolute -bottom-10 p-0 lg:p-5">
+                    <div class="bg-gradient-to-r from-white to-white group-hover:from-aorc-blue group-hover:to-aorc-bnf transition-all duration-300 p-3 rounded-xl shadow-myShadowBox mx-0 lg:mx-1 flex items-center">
+                        <div class="flex divide-x divide-gray-300 divide-x-reverse items-center">
+                            <div class="px-2 w-auto flex-1 justify-items-end justify-center p-1 rounded-full">   
+                                <div class="flex items-center justify-start">
+                                    <svg class="w-12 h-10 text-aorc-banafsh fill-current transition-all duration-300 group-hover:text-white" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 8c-2.168 0-4 1.832-4 4s1.832 4 4 4 4-1.832 4-4-1.832-4-4-4zm0 6c-1.065 0-2-.935-2-2s.935-2 2-2 2 .935 2 2-.935 2-2 2z"></path><path d="M20 5h-2.586l-2.707-2.707A.996.996 0 0 0 14 2h-4a.996.996 0 0 0-.707.293L6.586 5H4c-1.103 0-2 .897-2 2v11c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V7c0-1.103-.897-2-2-2zM4 18V7h3c.266 0 .52-.105.707-.293L10.414 4h3.172l2.707 2.707A.996.996 0 0 0 17 7h3l.002 11H4z"></path></svg>
+                                    <h4 class="text-xxs font-bold text-aorc-banafsh transition-all duration-300 group-hover:text-white">عکس</h4>
+                                </div>
+                                <h4 class="text-center whitespace-nowrap text-xxs text-gray-400 transition-all duration-300 group-hover:text-white">30 اردیبهشت 1400</h4>
+                            </div>
+                            <div class="px-2 w-auto">
+                                <a class="tracking-tighter transition-all duration-300 group-hover:text-white text-aorc-blue font-bold text-sm" href="">در سایه اتکا به داخل انجام شد، بازهم موفقیتی دیگر از جوان و خوش فکر و سیل ایرانی</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end multimedia -->
         </div>
-        <div class="flex group">
-          <h3
-            class="
-              text-aorc-banafsh
-              mr-auto
-              opacity-0
-              group-hover:opacity-100
-              transform
-              -translate-x-4
-              group-hover:translate-x-2
-              duration-300
-              text-xs
-              font-thin
-              py-1
-              px-2
-              tracking-tighter
-              bg-white
-              rounded-full
-              shadow-myShadowBox
-            "
-          >
-            موقعیت مکانی
-          </h3>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="text-aorc-bnf h-6 w-6"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
-            />
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
-            />
-          </svg>
+        <div class=" w-full mt-2">
+            <div class="pt-8">
+                <!-- multimedia item -->
+                <div class="relative w-full group multimedia-group multimedia-first">
+                    <img class="w-full multimedia-image object-cover shadow-lg transition-all duration-300 rounded-2xl z-0" src="./src/images/news01.jpg" alt="">
+                    <div class="w-full multimedia-des absolute -bottom-10 p-0 lg:p-5">
+                        <div class="bg-gradient-to-r from-white to-white group-hover:from-aorc-blue group-hover:to-aorc-bnf transition-all duration-300 p-3 rounded-xl shadow-myShadowBox mx-0 lg:mx-1 flex items-center">
+                            <div class="flex divide-x divide-gray-300 divide-x-reverse items-center">
+                                <div class="px-2 w-auto flex-1 justify-items-end justify-center p-1 rounded-full">   
+                                    <div class="flex items-center justify-start">
+                                        <svg class="w-12 h-10 text-aorc-banafsh fill-current transition-all duration-300 group-hover:text-white" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M20 3H4c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V5c0-1.103-.897-2-2-2zm.001 6c-.001 0-.001 0 0 0h-.465l-2.667-4H20l.001 4zM9.536 9 6.869 5h2.596l2.667 4H9.536zm5 0-2.667-4h2.596l2.667 4h-2.596zM4 5h.465l2.667 4H4V5zm0 14v-8h16l.002 8H4z"></path><path d="m10 18 5.5-3-5.5-3z"></path></svg>
+                                        <h4 class="text-xxs font-bold text-aorc-banafsh transition-all duration-300 group-hover:text-white">ویـدیو</h4>
+                                    </div>
+                                    <h4 class="text-center whitespace-nowrap text-xxs text-gray-400 transition-all duration-300 group-hover:text-white">30 اردیبهشت 1400</h4>
+                                </div>
+                                <div class="px-2 w-auto">
+                                    <a class="tracking-tighter transition-all duration-300 group-hover:text-white text-aorc-blue font-bold text-sm" href="">در سایه اتکا به داخل انجام شد، بازهم موفقیتی دیگر از جوان و خوش فکر سیل ایرانی</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end multimedia -->
+            </div>
+            <!-- podcast item -->
+            <div class="w-full group multimedia-group multimedia-second my-10 mt-16 md:mt-16 lg:mt-10">
+                <div class="w-full multimedia-des">
+                    <div class="bg-gradient-to-r from-white to-white group-hover:from-aorc-blue group-hover:to-aorc-bnf transition-all duration-300 p-3 rounded-xl shadow-myShadowBox flex items-center">
+                        <div class="flex divide-x divide-gray-300 divide-x-reverse items-center">
+                            <div class="px-2 w-auto flex-1 justify-items-end justify-center p-1 rounded-full">   
+                                <div class="flex items-center justify-start">
+                                    <svg class="w-12 h-10 text-aorc-banafsh fill-current transition-all duration-300 group-hover:text-white" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="m19.684 5.821-9-3.272A1.998 1.998 0 0 0 8 4.428v6.129A3.953 3.953 0 0 0 6 10c-2.206 0-4 1.794-4 4s1.794 4 4 4 4-1.794 4-4V4.428L19 7.7v6.856A3.962 3.962 0 0 0 17 14c-2.206 0-4 1.794-4 4s1.794 4 4 4 4-1.794 4-4V7.7c0-.838-.529-1.594-1.316-1.879zM6 16c-1.103 0-2-.897-2-2s.897-2 2-2 2 .897 2 2-.897 2-2 2zm11 4c-1.103 0-2-.897-2-2s.897-2 2-2 2 .897 2 2-.897 2-2 2z"></path></svg>
+                                    <h4 class="text-xxs text-aorc-banafsh font-bold transition-all duration-300 group-hover:text-white">پادکست</h4>
+                                </div>
+                                <h4 class="text-center whitespace-nowrap text-xxs text-gray-400 transition-all duration-300 group-hover:text-white">30 اردیبهشت 1400</h4>
+                            </div>
+                            <div class="px-2 w-auto">
+                                <a class="tracking-tighter transition-all duration-300 group-hover:text-white text-aorc-blue font-bold text-sm" href="">در سایه اتکا به داخل انجام شد، بازهم موفقیتی دیگر از جوان و خوش فکر و انقلابی و سیبی یبس یل یلبسیبل ایرانی</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+            <!-- end podcast item -->
         </div>
-        <div class="flex group">
-          <h3
-            class="
-              text-aorc-banafsh
-              mr-auto
-              opacity-0
-              group-hover:opacity-100
-              transform
-              -translate-x-4
-              group-hover:translate-x-2
-              duration-300
-              text-xs
-              font-thin
-              py-1
-              px-2
-              tracking-tighter
-              bg-white
-              rounded-full
-              shadow-myShadowBox
-            "
-          >
-            شبکه های اجتماعی
-          </h3>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="text-aorc-bnf h-6 w-6"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"
-            />
-          </svg>
+    </div>
+    <div class="absolute z-0 bg-aorc-lightabi top-4 rounded-2xl w-80 md:w-full md:max-w-3xl h-96"></div>
+</section>
+<!-- end multimedia -->
+<!-- entesharat -->
+<section class="my-40 relative max-w-sm md:max-w-3xl lg:max-w-5xl mx-auto flex justify-center">
+    <div class="flex flex-wrap md:flex-nowrap w-full relative z-10 justify-center items-center space-x-12 space-x-reverse">
+        <div class="w-full order-2 md:w-1/2 lg:w-2/3 md:order-1 items-start pt-3 mt-12">
+            <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-5 items-center">
+                <!-- majale -->
+                <div class="bg-white shadow-myShadowBox rounded-xl p-4">
+                    <div class="bg-gradient-to-r from-aorc-bnf to-aorc-darkblue -mt-28 mx-auto rounded-xl mb-2 w-full h-48 shadow-xl"></div>
+                    <div class="date flex items-center space-x-1 space-x-reverse px-2">
+                        <svg class="fill-current text-gray-400 text-opacity-70 w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M20 3H4c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V5c0-1.103-.897-2-2-2zM4 19V5h7v14H4zm9 0V5h7l.001 14H13z"></path><path d="M15 7h3v2h-3zm0 4h3v2h-3z"></path></svg>
+                        <h4 class="text-xs text-gray-400 tracking-tight leading-5">شماره 23</h4>
+                    </div>
+                    <div class="px-2">
+                        <a href="#" class="mb-3 pt-12 tracking-tighter text-aorc-blue font-bold text-sm leading-7">"نهضت ادامه دارد" منتشر شد</a>
+                    </div>
+                </div>
+                <!-- end of majale -->
+                <!-- neveshtare elmi -->
+                <div class="bg-white shadow-myShadowBox rounded-xl p-6 mt-24 md:mt-0 relative">
+                    <div class="flex space-x-4 space-x-reverse items-center">
+                        <div class="relative">
+                            <img class="w-16 h-16 object-cover rounded-xl" src="./src/images/personal.jpg" alt="">
+                            <div class="bg-aorc-blue text-xs p-1 absolute -left-2 rounded-md rounded-bl-none text-white -bottom-1 pl-1.5">'23</div>
+                        </div>
+                        <div class="author space-y-2">
+                            <h2 class="text-xs text-aorc-textabi pt-2">علی اکبری</h2>
+                            <h4 class="text-xxs text-gray-400 tracking-tight leading-5 transition-all duration-500">12 اردیبهشت 1400</h4>
+                        </div>
+                    </div>
+                    <div class="hashtag flex divide-x-2 divide-x-reverse mt-3 mb-1">
+                        <h5 class="text-gray-400 px-2 text-xxs">انرژی های ترکیبی</h5>
+                        <h5 class="text-gray-400 px-2 text-xxs">چرخه انرژی</h5>
+                    </div>
+                    <a href="#" class="pt-6 tracking-tighter text-aorc-blue font-bold text-sm leading-7">چگونگی عملکرد واحدهای اسیدی در بازه های انتقالی و مداری و چرخشی در واحد ها</a>
+                    <h4 class="selection:bg-yellow-300 my-2 text-xs text-aorc-textabi tracking-tight leading-6">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. </h4>
+                    <div class="bg-aorc-blue w-80 md:w-72 lg:w-64 md:mr-2.5 lg:mr-1 h-2 rounded-full mx-auto absolute -bottom-1"></div>
+                </div>
+                <!-- end of elmi -->                
+            </div>
         </div>
-      </div>
-      <!-- end button link -->
-    </header>
-    <!-- end header -->
-    <section></section>
-    <script type="module" src="/main.js"></script>
-  </body>
+        <div class="w-full order-1 md:order-2 md:w-1/2 lg:w-1/3 -mt-24">
+            <!-- entesharat title block -->
+            <div class="titleBlock">
+                <div class="titleBlockGroup relative z-20 flex space-x-4 space-x-reverse items-center pt-16">
+                    <div class="flex relative mr-8 group">
+                        <svg class="titleblock-icon text-white fill-current w-11 h-11 absolute -inset-x-3 -top-2 z-20" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="filter: drop-shadow(1px 5px 4px rgba(84, 86, 87, 0.459));"><path d="M21 8c-.202 0-4.85.029-9 2.008C7.85 8.029 3.202 8 3 8a1 1 0 0 0-1 1v9.883a1 1 0 0 0 .305.719c.195.188.48.305.729.28l.127-.001c.683 0 4.296.098 8.416 2.025.016.008.034.005.05.011.119.049.244.083.373.083s.254-.034.374-.083c.016-.006.034-.003.05-.011 4.12-1.928 7.733-2.025 8.416-2.025l.127.001c.238.025.533-.092.729-.28.194-.189.304-.449.304-.719V9a1 1 0 0 0-1-1zM4 10.049c1.485.111 4.381.48 7 1.692v7.742c-3-1.175-5.59-1.494-7-1.576v-7.858zm16 7.858c-1.41.082-4 .401-7 1.576v-7.742c2.619-1.212 5.515-1.581 7-1.692v7.858z"></path><circle cx="12" cy="5" r="3"></circle></svg>
+                        <a href="#" class="titleblock-title  bg-gradient-to-r from-aorc-blue to-aorc-banafsh px-12 py-2 rounded-full text-sm shadow-md tracking-tight font-bold text-white">نوشتار علمی و انتشـارات</a>
+                    </div>
+                    <a href="#" class="text-xs hover:text-aorc-sabz transition-all duration-300 text-gray-400">آرشیو</a>
+                    <div class="title-bg w-28 h-28 absolute -top-0 -inset-x-3 z-0"></div>
+                </div>
+                <h3 class="text-xs tracking-tighter text-aorc-textabi mt-4">در ایـن بخش می توانید از آخرین انتشـارات و نشریات ما دیدن نمایید</h3>
+            </div>
+            <!-- end entesharat title -->
+            <!-- entesharat tag -->
+            <div class="tender-voc flex flex-wrap justify-start justify-items-start items-center space-x-4 space-x-reverse pt-5">
+                <a class="bg-white  hover:bg-aorc-sabz hover:text-white transition-all duration-300 shadow-myShadowBox px-3 py-1 my-1 rounded-full text-xs text-aorc-lightbanafsh" href="#">نشریات</a>
+                <a class="bg-white  hover:bg-aorc-sabz hover:text-white transition-all duration-300 shadow-myShadowBox px-3 py-1 my-1 rounded-full text-xs text-aorc-lightbanafsh" href="#">بروشور ها</a>
+                <a class="bg-white  hover:bg-aorc-sabz hover:text-white transition-all duration-300 shadow-myShadowBox px-3 py-1 my-1 rounded-full text-xs text-aorc-lightbanafsh" href="#">کاتالوگ</a>
+                <a class="bg-white  hover:bg-aorc-sabz hover:text-white transition-all duration-300 shadow-myShadowBox px-3 py-1 my-1 rounded-full text-xs text-aorc-lightbanafsh" href="#">عکس نوشته ها</a>
+                <a class="bg-white  hover:bg-aorc-sabz hover:text-white transition-all duration-300 shadow-myShadowBox px-3 py-1 my-1 rounded-full text-xs text-aorc-lightbanafsh" href="#">نوشتار علمی</a>
+            </div>
+            <!-- end entesharat tag -->
+        </div>
+    </div>
+    <!-- <div class="absolute z-0 bg-aorc-lightabi top-4 rounded-2xl max-w-md md:max-w-xs px-14 w-full h-48 md:h-96"></div> -->
+</section>
+<!-- end entesharat -->
+<!-- pishnahad -->
+<!-- <section class="py-8 px-8">
+    <div class="max-w-sm md:max-w-5xl mx-auto flex flex-wrap space-x-4 space-x-reverse justify-center items-center">
+        <h1 class="tracking-tighter transition-all text-center duration-300 group-hover:text-white text-indigo-700 font-bold text-sm">پیشنهـاد و انتقـاد خود را با ما به اشتراک بگـذارید و مـا را در جهت بهبود عملکردمان یاری نماییـد</h1>
+        <div class="titlePishnahad">
+            <div class="titleBlockGroup relative z-20 flex space-x-4 space-x-reverse items-center">
+                <div class="flex relative mr-8 group">
+                    <svg class="titleblock-icon text-white fill-current w-11 h-11 absolute -inset-x-3 -top-1.5 z-20" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="filter: drop-shadow(1px 5px 4px rgba(84, 86, 87, 0.459));"><path d="M20 4H6c-1.103 0-2 .897-2 2v5h2V8l6.4 4.8a1.001 1.001 0 0 0 1.2 0L20 8v9h-8v2h8c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2zm-7 6.75L6.666 6h12.668L13 10.75z"></path><path d="M2 12h7v2H2zm2 3h6v2H4zm3 3h4v2H7z"></path></svg>
+                    <a href="#" class="titleblock-title  bg-gradient-to-r from-aorc-blue to-aorc-banafsh px-12 py-2 rounded-full text-sm shadow-md tracking-tight font-bold text-white">پیشنهـاد و انتقـاد</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> -->
+<!-- end pishnahad -->
+<!-- shohada -->
+<section id="shohada" class="relative py-6 mt-24 border-l-0 border-r-0 bg-white border-aorc-lightabi h-auto md:h-24">
+    <div class="max-w-sm md:max-w-3xl lg:max-w-5xl mx-auto flex flex-wrap md:divide-x-2 md:divide-aorc-khaki md:divide-x-reverse justify-between items-center">
+        <div class="w-full md:w-1/2 lg:w-1/3">
+            <div class="flex items-center md:-mt-24">
+                <div class="relative">
+                    <img src="./src/images/Untitled-1.png" class="" alt="">
+                    <a href="" class="text-xxs shadow-lg absolute -bottom-0 -mr-0.5 right-7 text-white bg-yellow-900 hover:bg-yellow-900 hover:text-white transition-all duration-300 font-bold px-2 py-1 border-2 rounded-full tracking-tight border-aorc-khaki">معرفی کامـل شهیـد</a>
+                </div>
+                <div class="mt-16">
+                    <span class="text-red-600 text-xs tracking-tighter font-bold">شهیــد</span><span class="text-xs mr-1 tracking-tight font-bold text-gray-500">والامقـام</span>
+                    <h1 class="text-2xl mb-1 text-aorc-textabi font-bold tracking-tighter">احمـد زین الدیــن</h1>
+                </div>
+            </div>
+        </div>
+        <div class="w-full md:w-1/2 lg:w-2/3 pr-8 md:-mt-10">
+            <span class="text-xs tracking-tighter text-gray-600">مقام معظم رهبری</span>
+            <h1 class="text-sm tracking-tighter text-aorc-textabi font-bold">شهدا این هدیه‌ی الهی را آسان و رایگان به‌دست نیاوردند؛ به قیمت مجاهدت به‌دست آوردند؛ در راه خدا جهاد کردند، از خودشان گذشتند و خدا این هدیه را به آنها داد .</h1>
+        </div>
+    </div>
+</section>
+<!-- end shohada -->
+<!-- footer -->
+<section id="footer" class="bg-white py-12 px-6">
+    <div class="max-w-sm md:max-w-4xl lg:max-w-5xl mx-auto flex justify-between">
+        <div class="flex flex-wrap justify-center w-full">
+            <div class="w-full md:w-1/4">
+                <div class="flex items-center space-x-2 space-x-reverse" id="right-logo">
+                    <div class="logo">
+                        <img alt="شرکت پالایش نفت آبادان" class="w-11 h-auto" src="./src/images/logo.svg"/>
+                    </div>
+                    <div class="des text-justify">
+                        <h1 class="text-aorc-blue font-extrabold text-sm tracking-tight">
+                            شـرکت پالایش نفت آبـادان
+                        </h1>
+                        <h2 class="text-xxs tracking-tight text-gray-400">
+                            یک صد سـال افتـخار در صنعت نفت ایـران
+                        </h2>
+                    </div>
+                </div>
+                <div class="py-2 space-y-1">
+                    <h6 class="text-xs text-gray-400">آدرس : ایــران،خوزستــان،آبـادان، بـریـم</h6>
+                    <h6 class="text-xs text-gray-400">شرکت پالایش نفت آبادان</h6>
+                </div>
+                <div class="flex space-x-2 space-x-reverse justify-start items-center">
+                    <svg class="text-aorc-dark fill-current w-5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 14c2.206 0 4-1.794 4-4s-1.794-4-4-4-4 1.794-4 4 1.794 4 4 4zm0-6c1.103 0 2 .897 2 2s-.897 2-2 2-2-.897-2-2 .897-2 2-2z"></path><path d="M11.42 21.814a.998.998 0 0 0 1.16 0C12.884 21.599 20.029 16.44 20 10c0-4.411-3.589-8-8-8S4 5.589 4 9.995c-.029 6.445 7.116 11.604 7.42 11.819zM12 4c3.309 0 6 2.691 6 6.005.021 4.438-4.388 8.423-6 9.73-1.611-1.308-6.021-5.294-6-9.735 0-3.309 2.691-6 6-6z"></path></svg>
+                    <svg class="text-aorc-dark fill-current w-5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M11.999 7.377a4.623 4.623 0 1 0 0 9.248 4.623 4.623 0 0 0 0-9.248zm0 7.627a3.004 3.004 0 1 1 0-6.008 3.004 3.004 0 0 1 0 6.008z"></path><circle cx="16.806" cy="7.207" r="1.078"></circle><path d="M20.533 6.111A4.605 4.605 0 0 0 17.9 3.479a6.606 6.606 0 0 0-2.186-.42c-.963-.042-1.268-.054-3.71-.054s-2.755 0-3.71.054a6.554 6.554 0 0 0-2.184.42 4.6 4.6 0 0 0-2.633 2.632 6.585 6.585 0 0 0-.419 2.186c-.043.962-.056 1.267-.056 3.71 0 2.442 0 2.753.056 3.71.015.748.156 1.486.419 2.187a4.61 4.61 0 0 0 2.634 2.632 6.584 6.584 0 0 0 2.185.45c.963.042 1.268.055 3.71.055s2.755 0 3.71-.055a6.615 6.615 0 0 0 2.186-.419 4.613 4.613 0 0 0 2.633-2.633c.263-.7.404-1.438.419-2.186.043-.962.056-1.267.056-3.71s0-2.753-.056-3.71a6.581 6.581 0 0 0-.421-2.217zm-1.218 9.532a5.043 5.043 0 0 1-.311 1.688 2.987 2.987 0 0 1-1.712 1.711 4.985 4.985 0 0 1-1.67.311c-.95.044-1.218.055-3.654.055-2.438 0-2.687 0-3.655-.055a4.96 4.96 0 0 1-1.669-.311 2.985 2.985 0 0 1-1.719-1.711 5.08 5.08 0 0 1-.311-1.669c-.043-.95-.053-1.218-.053-3.654 0-2.437 0-2.686.053-3.655a5.038 5.038 0 0 1 .311-1.687c.305-.789.93-1.41 1.719-1.712a5.01 5.01 0 0 1 1.669-.311c.951-.043 1.218-.055 3.655-.055s2.687 0 3.654.055a4.96 4.96 0 0 1 1.67.311 2.991 2.991 0 0 1 1.712 1.712 5.08 5.08 0 0 1 .311 1.669c.043.951.054 1.218.054 3.655 0 2.436 0 2.698-.043 3.654h-.011z"></path></svg>  
+                    <svg class="text-aorc-dark fill-current w-5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 20.001C19 11.729 12.271 5 4 5v2c7.168 0 13 5.832 13 13.001h2z"></path><path d="M12 20.001h2C14 14.486 9.514 10 4 10v2c4.411 0 8 3.589 8 8.001z"></path><circle cx="6" cy="18" r="2"></circle></svg>
+                </div>
+            </div>
+            <div class="w-full md:w-3/4 flex flex-wrap justify-between my-4 md:my-0">
+                <ul class="w-1/2 md:w-1/3 flex-col space-y-1">
+                    <li class="group"><a href="http://" class="border-r-2 border-opacity-0 hover:border-opacity-100 transition-all duration-300 hover:border-aorc-abi hover:pr-3 pr-2 text-xs text-aorc-dark text-opacity-80 font-bold">درباره ما</a></li>
+                    <li class="group"><a href="http://" class="border-r-2 border-opacity-0 hover:border-opacity-100 transition-all duration-300 hover:border-aorc-abi hover:pr-3 pr-2 text-xs text-aorc-dark text-opacity-80 font-bold">اخبـار و رویدادها</a></li>
+                    <li class="group"><a href="http://" class="border-r-2 border-opacity-0 hover:border-opacity-100 transition-all duration-300 hover:border-aorc-abi hover:pr-3 pr-2 text-xs text-aorc-dark text-opacity-80 font-bold">چنــدرسـانـه ای</a></li>
+                    <li class="group"><a href="http://" class="border-r-2 border-opacity-0 hover:border-opacity-100 transition-all duration-300 hover:border-aorc-abi hover:pr-3 pr-2 text-xs text-aorc-dark text-opacity-80 font-bold">فراخوان ها</a></li>
+                    <li class="group"><a href="http://" class="border-r-2 border-opacity-0 hover:border-opacity-100 transition-all duration-300 hover:border-aorc-abi hover:pr-3 pr-2 text-xs text-aorc-dark text-opacity-80 font-bold">مسئولیت های اجتماعی</a></li>
+                </ul>
+                <ul class="w-1/2 md:w-1/3 flex-col space-y-1">
+                    <li><a href="http://" class="border-r-2 border-opacity-0 hover:border-opacity-100 transition-all duration-300 hover:border-aorc-abi hover:pr-3 pr-2 text-xs text-aorc-dark text-opacity-80 font-bold">پایگاه اطلاع رسانی مقام معظم رهبری</a></li>
+                    <li><a href="http://" class="border-r-2 border-opacity-0 hover:border-opacity-100 transition-all duration-300 hover:border-aorc-abi hover:pr-3 pr-2 text-xs text-aorc-dark text-opacity-80 font-bold">پایگاه اطلاع رسانی دولت</a></li>
+                    <li><a href="http://" class="border-r-2 border-opacity-0 hover:border-opacity-100 transition-all duration-300 hover:border-aorc-abi hover:pr-3 pr-2 text-xs text-aorc-dark text-opacity-80 font-bold">تدارکات الکترونیکی دولت - ستاد</a></li>
+                    <li><a href="http://" class="border-r-2 border-opacity-0 hover:border-opacity-100 transition-all duration-300 hover:border-aorc-abi hover:pr-3 pr-2 text-xs text-aorc-dark text-opacity-80 font-bold">آرشیو شرکت پالایش نفت آبادان</a></li>
+                    <li><a href="http://" class="border-r-2 border-opacity-0 hover:border-opacity-100 transition-all duration-300 hover:border-aorc-abi hover:pr-3 pr-2 text-xs text-aorc-dark text-opacity-80 font-bold">خبرگزاری شانا</a></li>
+                </ul>
+                <div class="w-full md:w-1/3 mt-4 md:mt-0">
+                    <h2 class="text-aorc-blue font-bold text-sm tracking-tighter">تماس با ما</h2>
+                    <div class="space-y-2 pt-2">
+                        <p class="tracking-tighter text-xs text-gray-400">روابط عمومی :۵۳۲۲۵۱۷۴-۵۳۱۸۲۲۴۷-۰۶۱</p>
+                        <p class="tracking-tighter text-xs text-gray-400">مرکز تلفن :۵۳۲۲۸۰۸۰-۰۶۱ - ک پ :۶۳۱۶۹۱۵۶۵۱</p>
+                        <a class="text-xs leading-9 text-blue-400" href="mailto:">info@abadan-ref.ir</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end footer -->
+<!-- copyright -->
+<section id="copyright" class="bg-aorc-lightabi py-3">
+    <div class="max-w-sm md:max-w-4xl mx-auto lg:max-w-5xl w-full">
+        <div class="flex justify-between">
+            <h5 class="text-xxs w-auto text-aorc-textabi tracking-tighter">طراحی و کدنویسی : روابط عمومی شرکت پالایش نفت آبادان</h5>
+            <h6 class="text-xxs w-auto text-aorc-textabi tracking-tighter">بهمن ماه 1400</h6>
+        </div>
+    </div>
+</section>
+<!-- end copyright -->
+<script type="module" src="/main.js"></script>
+</body>
 </html>

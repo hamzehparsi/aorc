@@ -1,4 +1,6 @@
-﻿@import url(fontiran.css); /* لینک فایلی که وظیفه بارگذاری فونت ها را برعهده دارد */
+﻿@import url(fontiran.css);
+
+/* لینک فایلی که وظیفه بارگذاری فونت ها را برعهده دارد */
 body {
   font-family: IRANSans !important;
   font-weight: 300;
@@ -6,6 +8,7 @@ body {
   margin: 0;
   font-display: block;
 }
+
 h1,
 h2,
 h3,
@@ -26,6 +29,13 @@ svg.my-icon {
   transition: all 0.3s ease;
 }
 
+.menu-item>a {
+  /* color: rgb(158, 158, 158); */
+}
+
+.menu-item:hover>a {
+  /* color: rgb(52, 211, 153); */
+}
 
 .top-menu li:hover svg.my-icon {
   transform: rotate(180deg);
@@ -98,25 +108,31 @@ svg.my-icon {
   min-height: 650px;
   background-repeat: no-repeat;
 }
+
 .reverse-curve-bg {
   background: none;
   min-height: auto;
 }
+
 .curve-shape {
   border-radius: 38% 62% 70% 30% / 50% 42% 58% 50%;
   background: rgb(248, 251, 255);
-  background: linear-gradient(
-    270deg,
-    rgba(248, 251, 255, 1) 0%,
-    rgba(231, 242, 255, 1) 100%
-  );
+  background: linear-gradient(270deg,
+      rgba(248, 251, 255, 1) 0%,
+      rgba(231, 242, 255, 1) 100%);
   width: 100%;
 }
+
 header {
   position: relative;
   z-index: 1;
   overflow: hidden;
+  
 }
+body {
+  /* background: linear-gradient(140degree ,#49BCF6, #49DEB2); */
+}
+/* 
 header::before {
   background-color: #985be3;
   position: absolute;
@@ -128,12 +144,13 @@ header::before {
   opacity: 100%;
   border-radius: 100%;
   content: "";
-  z-index: 0;
+  z-index: -1;
 }
+
 header::after {
   background-color: #9fdef9;
   position: absolute;
-  bottom: 20px;
+  bottom: 120px;
   left: -180px;
   width: 300px;
   height: 300px;
@@ -141,5 +158,89 @@ header::after {
   opacity: 100%;
   border-radius: 100%;
   content: "";
-  z-index: 0;
+  z-index: -1;
+} */
+/* 
+.news-item {
+  transition: all ease-in-out 0.3s;
+}
+
+.news-item:hover {
+  margin-top: -10px;
+} */
+
+.title-bg {
+  background-image: url("../images/polka-dots.svg");
+  z-index: -1;
+}
+.titleblock-icon, .titleblock-title, .event-image, .event-des, img.news-image, .event-image img, .multimedia-image, .multimedia-des {
+  transition: all ease .5s;
+}
+.titleBlockGroup:hover .titleblock-icon {
+  transform: translateX(-5px);
+}
+.titleBlockGroup:hover .titleblock-title {
+  transform: translateX(5px);
+}
+/* news & event */
+.eventGroup:hover .event-image {
+  transform: translateY(5px);
+}
+.eventGroup:hover .event-des {
+  transform: translateY(-5px);
+}
+/* multimedia */
+.multimedia-group:hover .multimedia-image {
+  transform: translateY(-5px);
+  filter: grayscale(1);
+}
+.multimedia-group:hover .multimedia-des {
+  transform: translateY(7px);
+}
+
+#shohada {
+  background-image: url(../images/sh-bg.png);
+  background-position: center;
+  background-repeat: repeat-x;
+}
+/* #news {
+  position: relative;
+}
+#news::before {
+  position: absolute;
+  background-image: url(../images/news-bg.png);
+  content: '';
+  background-repeat: no-repeat;
+  display: block;
+  width: 500px;
+  height: 500px;
+  left: 0;
+} */
+
+.blueBg {
+  /* background-color: rgb(59 130 246 / 70%);
+  position: absolute;
+  bottom: -5px;
+  left: 18%;
+  width: 100px;
+  height: 100px;
+  filter: blur(30px);
+  opacity: 100%;
+  border-radius: 100%;
+  content: "";
+  z-index: -1; */
+}
+.magentaBg {
+  background-attachment: scroll;
+  background-color: rgb(88 59 246 / 30%);
+  position: absolute;
+  right: 12%;
+  top: 150px;
+  width: 150px;
+  height: 150px;
+  filter: blur(50px);
+  opacity: 100%;
+  border-radius: 100%;
+  content: "";
+  z-index: -1;
 }

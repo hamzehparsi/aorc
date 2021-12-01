@@ -1,4 +1,3 @@
-// let menuItem = document.querySelectorAll('.menu-item')
 let aboutUs = document.querySelector("#about-us");
 let subMenuAboutUs = document.querySelector(".sub-menu-about-us");
 
@@ -11,7 +10,7 @@ aboutUs.addEventListener("mouseleave", () => {
   // menuItem.classList.remove('text-green-400')
 });
 
-let news = document.querySelector("#news");
+let news = document.querySelector("#news-menu");
 let subMenuNews = document.querySelector(".sub-menu-news");
 
 news.addEventListener("mouseenter", () => {
@@ -109,6 +108,15 @@ mediaArrow.addEventListener("click", () => {
   mediaArrow.classList.toggle("-rotate-90");
 });
 
+// CSR
+
+let csrLink = document.querySelector(".csr-link ul");
+let csrArrow = document.querySelector(".csr-arrow");
+csrArrow.addEventListener("click", () => {
+  csrLink.classList.toggle("hidden");
+  csrArrow.classList.toggle("-rotate-90");
+});
+
 // notification
 let notificationBLock = document.querySelector("#notification");
 setTimeout(() => {
@@ -119,3 +127,25 @@ let notiClose = document.querySelector("#notiClose");
 notiClose.addEventListener("click", () => {
     notificationBLock.style.opacity = '0'
 });
+
+
+ScrollReveal({ distance: '30px', duration: 2500, delay:100 });
+ScrollReveal().reveal('.titleBlock');
+ScrollReveal().reveal('.news-item', { delay: 700 });
+ScrollReveal().reveal('.event-item', { delay: 900 });
+ScrollReveal().reveal('.multimedia-first', { delay: 500 });
+ScrollReveal().reveal('.multimedia-second', { delay: 700 });
+ScrollReveal().reveal('.multimedia-three', { delay: 1100 });
+
+ScrollReveal().reveal('.tender-item', { delay: 500 });
+ScrollReveal().reveal('.tender-voc', { delay: 700 });
+ScrollReveal().reveal('.tender-download', { delay: 800 });
+
+// window.onscroll = () { hiddenArrow() }
+window.onscroll = function() {hiddenArrow()};
+
+function hiddenArrow() {
+  if (document.body.scrollTo > 300 || document.documentElement.scrollTop > 300 ) {
+    document.querySelector('#arrowSection').classList.add('opacity-0')
+  }
+}
